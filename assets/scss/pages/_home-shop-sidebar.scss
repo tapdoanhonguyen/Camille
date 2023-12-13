@@ -1,0 +1,142 @@
+/*
+-----------------------------------------------------------------------
+	Home Shop Modern CSS
+-----------------------------------------------------------------------
+*/
+
+.shop-sidebar-wrapper {
+	font-family: $font-current-theme1;
+	font-size: 18px;
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: $font-current-theme1;
+	}
+
+	.section-title {
+		.title {
+			font-family: $font-current-theme2;
+			font-size: 48px;
+			margin-bottom: 66px;
+		}
+	}
+
+	.header-area {
+		&.fixed-left {
+			@media #{$xsl-device} {
+				width: 270px;
+				padding: 30px 0;
+			}
+			@media #{$md-device} {
+				width: 100%;
+				padding: 22px 22px;
+			}
+
+			.header-widget-area {
+				@media #{$xsl-device} {
+					padding: 0 20px;
+				}
+			}
+
+			.header-navigation-area  {
+				@media #{$xsl-device} {
+					margin-bottom: 28px;
+				}
+
+				.main-menu.nav {
+					.has-submenu {
+						.submenu-nav {
+							&.submenu-nav-mega {
+								@media #{$xsl-device} {
+									padding: 20px 0;
+									width: 700px;
+								}
+							}
+						}
+
+						&:nth-child(5n) {
+							.submenu-nav {
+								.has-submenu {
+									.submenu-nav{
+										@media (max-height: 885px) {
+											bottom: -100px;
+											top: auto;
+										}
+										@media (max-height: 758px) {
+											bottom: -10px;
+											top: auto;
+										}
+									}
+								}
+							}
+						}
+
+						&:last-child {
+							&:hover {
+								.submenu-nav {
+									&.submenu-nav-mega {
+										@media (max-height: 790px) {
+											margin-top: -110px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			&.header-align-center {
+				.header-action-area {
+					@media #{$xsl-device} {
+						margin-bottom: 60px;
+					}
+					@media #{$md-device} {
+						margin-bottom: 0;
+						position: relative;
+						top: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	.product-area {
+		padding: 49px 0 0;
+
+		.product-item {
+			margin-bottom: 15px;
+			
+			.product-thumb {
+				.product-action {
+					.add-wishlist {
+						.icon {
+							&:hover {
+								color: $theme-color4;
+							}
+						}
+					}
+
+					.addto-wrap {
+						a {
+							&:hover {
+								background-color: $theme-color4;
+							}
+						}
+					}
+				}
+			}
+
+			.product-info {
+				.title {
+					a {
+						&:hover {
+							color: $theme-color4;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

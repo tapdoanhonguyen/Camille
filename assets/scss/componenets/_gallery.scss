@@ -1,0 +1,42 @@
+/*
+-----------------------------------------------------------------------
+  Gallery CSS
+-----------------------------------------------------------------------
+*/
+
+.gallery-area {}
+
+.gallery-item {
+	margin-bottom: 30px;
+
+	.gallery-thumb {
+		position: relative;
+		overflow: hidden;
+
+		img {
+			@include scale(1);
+			@include transition(all .3s ease-out);
+			@media #{$md-device} {
+				width: 100%;
+			}
+		}
+	}
+
+	&:hover {
+		.gallery-thumb {
+			img {
+				@include scale(1.1);
+			}
+		}
+	}
+}
+
+.gutter0 {
+	margin-right: -0px;
+	margin-left: -0px;
+	.col,
+	[class*=col-] {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+}

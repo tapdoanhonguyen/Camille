@@ -1,0 +1,377 @@
+/*
+-----------------------------------------------------------------------
+	Home Barber CSS
+-----------------------------------------------------------------------
+*/
+
+.barber-wrapper {
+	font-family: $font-current-theme3;
+	font-size: 16px;
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: $font-current-theme5;
+	}
+
+	.btn-theme {
+		&:hover {
+			background-color: $theme-color22;
+		}
+	}
+
+	.btn-link {
+		color: #8a8a8a;
+		display: inline-block;
+		font-size: 18px;
+		margin-top: 0;
+		text-decoration: underline;
+		@media #{$lg-device} {
+			font-size: 16px;
+		}
+
+		&:hover {
+			color: $theme-color22;
+		}
+
+		a {
+			&:hover {
+				color: $theme-color22;
+			}
+		}
+	}
+
+	.section-title {
+		.title {
+			font-size: 48px;
+			margin-bottom: 0;
+			@media #{$lg-device} {
+				font-size: 35px;
+			}
+		}
+
+		.shape-img {
+			margin: 12px 0 14px;
+		}
+
+		.desc {
+			p {
+				font-size: 18px;
+				margin-bottom: 0;
+				@media #{$lg-device} {
+					font-size: 15px;
+				}
+			}
+		}
+	}
+
+	.about-area {
+		.container {
+			padding-top: 100px;
+			padding-bottom: 100px;
+
+			@media #{$lg-device} {
+				padding-top: 70px;
+				padding-bottom: 70px;
+			}
+		}
+	}
+
+	.pricing7-content-wrap {
+		.pricing-item {
+			.pricing-item-content {
+				.price-wrap {
+					.price {
+						color: $theme-color22;
+					}
+				}
+			}
+		}
+
+		.btn-link {
+			color: $black-8a;
+			display: inline-block;
+			font-size: 16px;
+			margin-top: 44px;
+			@media #{$sm-device} {
+				font-size: 13px;
+			}
+
+			a {
+				text-decoration: underline;
+			}
+
+			&:hover {}
+		}
+	}
+
+	.portfolio-item {
+		&:before {
+			background-color: $theme-color22;
+		}
+	}
+
+	.testimonial-area {
+		padding: 94px 0 92px;
+		@media #{$lg-device} {
+			padding: 74px 0 72px;
+		}
+
+		.testimonial-col2-slider  {
+			.slick-slide {
+				@media #{$sm-device} {
+					max-width: 400px;
+					padding: 0 15px;
+					width: 100% !important;
+				}
+			}
+		}
+	}
+
+	.product-area {
+		padding: 72px 0 20px;
+
+		.product-content-wrap {
+			.product-item {
+				.product-thumb {
+					border: 1px solid #e4e4e4;
+
+					.addto-wrap {
+						a {
+							&:hover {
+								background-color: $theme-color22;
+							}
+						}
+					}
+				}
+				.product-info {
+					.title {
+						font-size: 24px;
+
+						a {
+							&:hover {
+								color: $theme-color22;
+							}
+						}
+					}
+
+					.prices {
+						.price {
+							color: $theme-color22;
+							font-size: 18px;
+							font-weight: $font-weight-bold;
+						}
+					}
+				}
+
+				&:hover {
+					.overlay-black {
+						opacity: .2;
+					}
+				}
+			}
+		}
+	}
+
+	.post4-content-wrap {
+		.post-item {
+			.content {
+				.title {
+					font-family: $font-current-theme5;
+					font-size: 1.2857em;
+					a {
+						&:hover {
+							color: $theme-color22;
+						}
+					}
+				}
+
+				p {
+					font-size: 14px;
+				}
+
+				.meta {
+					a {
+						font-size: 0.8571428571em;
+						&:hover {
+							color: $theme-color22;
+						}
+					}
+					.category,
+					.author {
+						color: $theme-color22;
+					}
+				}
+			}
+
+			&:hover {}
+		}
+	}
+
+	.barber-content-wrap {
+		.barber-content-info {
+			padding: 101px 20px 126px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			text-align: center;
+			@media #{$lg-device} {
+				padding: 60px 15px 70px;
+			}
+
+			.title {
+				color: $white;
+				font-size: 48px;
+				position: relative;
+				padding-bottom: 29px;
+				margin-bottom: 22px;
+				@media #{$lg-device} {
+					font-size: 30px;
+					padding-bottom: 20px;
+					margin-bottom: 10px;
+				}
+				@media #{$md-device} {
+					font-size: 26px;
+				}
+
+				&:before {
+					background-color: $theme-color22;
+					position: absolute;
+					content: "";
+					width: 40px;
+					height: 4px;
+					bottom: 0;
+					left: 50%;
+					transform: translate(-50%, 0);
+				}
+			}
+
+			.desc-text {
+				color: $white;
+				font-size: 18px;
+				@media #{$lg-device} {
+					font-size: 15px;
+				}
+			}
+		}
+
+		.col-barber-1 {
+			.barber-content-info {
+				.content {
+					p {
+						color: $white;
+						font-size: 24px;
+						line-height: 40px;
+						margin-bottom: 0px;
+						@media #{$lg-device} {
+							font-size: 18px;
+							line-height: 30px;
+						}
+
+						+ {
+							p {
+								margin-top: 15px;
+								@media #{$lg-device} {
+									margin-top: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.col-barber-2 {
+			.barber-content-info {
+				.newsletter2-content-wrap {
+					padding: 0;
+					margin: 0 50px;
+					@media #{$lg-device} {
+						margin: 0;
+					}
+
+					.newsletter-form {
+						margin-top: 0;
+						.form-control {
+							color: $white;
+							font-size: 16px;
+							padding: 15px 100px 15px 0;
+
+							@include placeholder {
+								color: $white;
+							}
+						}
+
+						.btn-submit {
+							color: $white;
+							text-transform: capitalize;
+							font-size: 16px;
+							font-weight: 600;
+							bottom: 4px;
+						}
+					}
+				}
+			}
+		}
+
+		.col-barber-3 {
+			.barber-content-info {
+				.barber-appointment {
+					border: 2px solid $white;
+					padding: 18px 20px;
+					line-height: 26px;
+					font-size: 16px;
+					font-weight: $font-weight-bold;
+					color: #fff;
+					display: block;
+					margin: 0 50px;
+					margin-top: 36px;
+					@media #{$lg-device} {
+						margin: 0;
+						padding: 12px 20px;
+						font-size: 14px;
+					}
+
+					&:hover {
+						border-color: $theme-color22;
+						background-color: $theme-color22;
+					}
+				}
+			}
+		}
+	}
+
+	.scroll-to-top {
+	    background-color: $theme-color22;
+	}
+
+	.preloader-wrap {
+		.preloader {
+			.dots {
+				[class*="bounce"] {
+				    background-color: $theme-color22;
+				}
+			}
+		}
+	}
+
+	.footer-area {
+		&.footer-style-six {
+			.footer-widget-area {
+				@media #{$md-device} {
+					margin-bottom: 0;
+				}
+				.widget-item {
+					.about-widget {
+						.contact-info {
+							li {
+								@media #{$md-device} {
+									margin-bottom: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

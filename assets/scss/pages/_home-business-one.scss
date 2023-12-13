@@ -1,0 +1,250 @@
+/*
+-----------------------------------------------------------------------
+	Home Business One CSS
+-----------------------------------------------------------------------
+*/
+
+.business-one-wrapper {
+	.team4-content-wrap {
+		.team-item	{
+			.overlay-content {
+				&:before,
+				&:after {
+					border-color: $theme-color3;
+				}
+
+				.content {
+					.title {
+						a {
+							&:hover {
+								color: $theme-color3;
+							}
+						}
+					}
+
+					.social-icons {
+						a {
+							&:hover {
+								color: $theme-color3;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.service-area {
+		.service6-content-wrap {
+			.icon-box-item {
+				&:hover {
+					.icon-box-content {
+						.title {
+							a {
+								color: $theme-color3;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.portfolio-item {
+		&:before {
+			background-color: $theme-color3;
+		}
+
+		.portfolio-info {
+			.title {
+				font-family: $font-current-theme1;
+			}
+		}
+	}
+
+	.pricing3-content-wrap	{
+		.pricing-item {
+			.pricing-item-header {
+				.title {
+					color: $theme-color3;
+				}
+			}
+		}	
+	}
+
+	.post-item {
+		.content {
+			.title {
+				a {
+					&:hover {
+						color: $theme-color3;
+					}
+				}
+				
+			}
+
+			.meta {
+				a {
+					&:hover {
+						color: $theme-color3;
+					}
+				}
+				.category {
+					color: $theme-color3;
+				}
+			}
+		}
+	}
+	
+	.progress-bar-item {
+		.progress {
+		&-info {
+			&__title {
+				font-size: 14px;
+			}
+
+			&__percent {
+				font-size: 14px;
+			}
+		}
+
+		&-line {
+			&-bar {
+				    @include gradient-bg2;
+				}
+			}
+		}
+	}
+
+	.divider-style8-wrap {
+		.section-title {
+			.title {
+				margin-bottom: 36px;
+			}
+		}
+	}
+
+	.divider-style9-wrap {
+		.section-title {
+			.title {
+				margin-bottom: 46px;
+			}
+		}
+	}
+
+	.divider-style10-wrap {
+		.divider-content {
+			.title {
+				margin-bottom: 16px;
+			}
+		}
+	}
+
+	.contact-info-content {
+		margin-left: 37px;
+		@media #{$md-device} {
+			margin-left: 0;
+		}
+
+		.section-title {
+			.title {
+				margin-bottom: 8px;
+			}
+		}
+
+		.contact-info {
+			ul {
+				li {
+					a {
+						&:hover {
+							color: $theme-color3;
+						}
+					}
+				}
+			}
+		}
+
+		.social-icons {
+			a {
+
+				&:hover {
+					color: $theme-color3;
+				}
+			}
+		}
+	}
+
+	.contact-form3-content {
+		.contact-form {
+			.form-group {
+				.btn-contact {
+					&:hover {
+						background-color: $theme-color3;
+					}
+				}
+			}
+		}
+	}
+
+	.section-title {
+		margin-bottom: 50px;
+
+		.title {
+			font-weight: $font-weight-normal;
+			margin-bottom: 8px;
+			@media #{$md-device} {
+				font-size: 26px;
+			}
+		}
+
+		.subtitle {
+			letter-spacing: 0;
+		}
+
+		.desc {
+			color: $black-light;
+			line-height: 2;
+		}
+	}
+
+	.post-slider {
+		.slick-slide {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+
+		&.slick-dotted-style {
+			&.slick-dotted {
+				&.slick-slider {
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.icon-list {
+		&.style2 {
+			ul {
+				li {
+					&:before {
+						color: $theme-color3;
+					}
+				}
+			}
+		}
+	}
+
+	.scroll-to-top {
+	    background-color: $theme-color3;
+	}
+
+	.preloader-wrap {
+		.preloader {
+			.dots {
+				[class*="bounce"] {
+				    background-color: $theme-color3;
+				}
+			}
+		}
+	}
+}

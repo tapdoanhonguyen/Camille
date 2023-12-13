@@ -1,0 +1,143 @@
+/*
+-----------------------------------------------------------------------
+	Home Spa & Beauty CSS
+-----------------------------------------------------------------------
+*/
+
+.spa-and-beauty-wrapper {
+	font-family: $font-current-theme4;
+	font-size: 16px;
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: $font-current-theme5;
+	}
+
+	.btn-theme {}
+
+	.section-title {
+		.title {
+			font-weight: $font-weight-normal;
+			font-size: 48px;
+			text-transform: uppercase;
+			@media #{$lg-device} {
+				font-size: 35px;
+			}
+			@media #{$md-device} {
+				font-size: 30px;
+				letter-spacing: 0;
+			}
+		}
+
+		.desc {
+			p {
+				font-size: 20px;
+				letter-spacing: 2px;
+				@media #{$lg-device} {
+					font-size: 16px;
+					letter-spacing: 1px;
+				}
+			}
+		}
+	}
+
+	.has-submenu {
+		.submenu-nav {
+            @media #{$lg-device} {
+              left: -66%;
+            }
+		}
+	}
+
+	.service-area {
+		padding: 86px 0 0;
+		@media #{$lg-device} {
+			padding: 70px 0 0;
+		}
+
+		.section-title {
+			margin-bottom: 102px;
+			@media #{$lg-device} {
+				margin-bottom: 65px;
+			}
+
+			.title {
+				margin-bottom: 18px;
+				@media #{$lg-device} {
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+
+	.contact-area {
+		padding: 76px 0px 92px;
+
+		.contact-form4-content {
+			.contact-form {
+				.form-group {
+					.btn-contact {
+						&:hover {
+							background-color: $theme-color9;
+							border-color: $theme-color9;
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.footer-area {
+		.container-fluid {
+			padding-right: 80px;
+			padding-left: 80px;
+			@media #{$lg-device} {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+
+		.footer-widget-area {
+			&.widget-area-three {
+				.about-widget {
+					.social-icons {
+						a {
+							&:hover {
+								color: $theme-color9;
+							}
+						}
+					}
+				}
+
+				.contact-info-widget {
+					li {
+						.icon {
+							color: $theme-color9;
+						}
+
+						a {
+							&:hover {
+								color: $theme-color9;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.scroll-to-top {
+	    background-color: $theme-color9;
+	}
+
+	.preloader-wrap {
+		.preloader {
+			.dots {
+				[class*="bounce"] {
+				    background-color: $theme-color9;
+				}
+			}
+		}
+	}
+}

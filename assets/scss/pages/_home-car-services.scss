@@ -1,0 +1,249 @@
+/*
+-----------------------------------------------------------------------
+	Home Car Services CSS
+-----------------------------------------------------------------------
+*/
+
+.car-services-wrapper {
+	font-family: $font-current-theme3;
+	font-size: 16px;
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: $font-current-theme3;
+	}
+
+	.btn-link {
+		color: $white;
+		text-decoration: underline;
+	}
+
+	.section-title {
+		margin-bottom: 48px;
+		.title {
+			color: $black-light;
+			font-weight: $font-weight-semi-bold;
+			font-size: 32px;
+			letter-spacing: 1px;
+			margin-bottom: 22px;
+			@media #{$md-device} {
+				font-size: 28px;
+				letter-spacing: 0;
+				margin-bottom: 8px;
+			}
+			@media #{$sm-device} {
+				font-size: 25px;
+				margin-bottom: 5px;
+			}
+		}
+
+		.shape-img {}
+
+		.desc {
+			p {
+				@media #{$md-device} {
+					font-size: 14px;
+					line-height: 26px;
+				}
+			}
+		}
+
+		&.section-title-light {
+			.title {
+				color: $white;
+			}
+
+			.desc {
+				p {
+					color: rgba($white, .5);
+				}
+			}
+		}
+	}
+
+	.header-area {
+		.header-navigation-area {
+			margin-right: -115px;
+			z-index: 1;
+			@media (max-width: 1790px) {
+				margin-right: -50px;
+			}
+			@media #{$xsl-device} {
+				margin-right: 0;
+			}
+
+			.main-menu {
+				.has-submenu {
+					&.submenu-nav-left {
+						.submenu-nav {
+							.has-submenu {
+								& > a {
+									padding: 12px 45px;
+								}
+
+								&:after {
+									content: '\';
+									left: 30px;
+									right: auto;
+								}
+
+								.submenu-nav {
+									left: -100%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.header-action-area {
+			.btn-search,
+			.btn-user,
+			.btn-cart,
+			.btn-aside-menu {
+	    		height: 38px;
+	    		line-height: 38px;
+	    		width: 38px;
+	    	}
+		}
+	}
+
+
+	.has-submenu {
+		.submenu-nav {
+            left: -66%;
+		}
+	}
+
+	.about-area {
+		.about6-content-wrap {
+			padding: 87px 0 85px;
+			display: flex;
+			align-items: center;
+			@media #{$md-device} {
+				padding: 65px 0 75px;
+			}
+		}
+	}
+
+	.service-area {
+		padding: 75px 0 84px;
+		@media #{$md-device} {
+			padding: 70px 0 74px;
+		}
+
+		.section-title {
+			.title {
+				margin-bottom: 12px;
+			}
+		}
+
+		.service13-content-wrap {
+			.service-item {
+				&:hover {
+					.content {
+						.title {
+							background-color: $theme-color10;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.work-process-area {
+		padding: 75px 0 23px;
+
+		.work-process-content-wrap {
+			.process-content {
+				.inner {
+					.process-item {
+						.number {
+							span {
+								background-color: $theme-color10;
+							}
+						}
+
+						.content {
+							background-color: $theme-color10;
+							.title {}
+
+							p {}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.pricing-area {
+		padding: 20px 0 85px;
+		@media #{$md-device} {
+			padding: 20px 0 55px;
+		}
+	}
+
+	.testimonial-area {
+		.container {
+			@media #{$lg-device} {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+
+	.blog-area {
+		.container {
+			padding: 75px 15px 53px;
+			@media #{$lg-device} {
+				padding: 65px 15px 43px;
+			}
+		}
+
+		.blog-page-col2-slider  {
+			&.slick-dotted {
+				&.slick-slider {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.slick-dotted-style {
+	  &.dots-active-theme {
+	    .slick-dots {
+	      li {
+	        &.slick-active {
+	          button {
+	            &:before {
+	              border-color: $theme-color10;
+	            }
+	          }
+	        }
+	      }
+	    }
+	  }
+	}
+
+	.footer-area {
+		.footer-widget-area {
+			@media #{$md-device} {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.scroll-to-top {
+	    background-color: $theme-color10;
+	}
+
+	.preloader-wrap {
+		.preloader {
+			.dots {
+				[class*="bounce"] {
+				    background-color: $theme-color10;
+				}
+			}
+		}
+	}
+}

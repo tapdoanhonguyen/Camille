@@ -1,0 +1,80 @@
+/*
+-----------------------------------------------------------------------
+	Home Freelancer One CSS
+-----------------------------------------------------------------------
+*/
+
+.freelancer-one-wrapper {
+	font-family: $font-current-theme1;
+	font-size: 18px;
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: $font-current-theme1;
+	}
+
+	.btn-theme {}
+
+	.section-title {
+		.title {
+			font-weight: $font-weight-normal;
+			font-size: 70px;
+			letter-spacing: -3px;
+			@media #{$lg-device} {
+				font-size: 50px;
+			}
+			@media #{$md-device} {
+				font-size: 40px;
+			}
+		}
+
+		.desc {
+			margin-bottom: 36px;
+
+			p {
+				line-height: 36px;
+				@media #{$md-device} {
+					line-height: 24px;
+					font-size: 14px;
+				}
+			}
+		}
+
+		.btn-theme {}
+	}
+
+	.freelancer-area {
+		.container-fluid {
+			padding: 0 86px;
+			@media #{$lg-device} {
+				padding: 0 15px;
+			}
+		}
+	}
+
+	.portfolio-area {
+		.container-fluid {
+			padding: 50px 80px 65px;
+			@media #{$lg-device} {
+				padding: 40px 15px 55px;
+			}
+		}
+		.portfolio-item {
+			margin-bottom: 20px;
+		}
+	}
+
+	.footer-area {
+		.footer-bottom {
+			padding: 46px 20px 43px;
+			
+			.widget-text {
+				p {
+					color: $black-8a;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+

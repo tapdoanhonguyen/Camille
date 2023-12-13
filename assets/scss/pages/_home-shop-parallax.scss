@@ -1,0 +1,82 @@
+/*
+-----------------------------------------------------------------------
+	Home Shop Parallax CSS
+-----------------------------------------------------------------------
+*/
+
+.shop-parallax-wrapper {
+	font-family: $font-current-theme1;
+	font-size: 18px;
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: $font-current-theme1;
+	}
+
+	.section-title {
+		.title {
+			font-family: $font-current-theme2;
+			font-size: 48px;
+			margin-bottom: 66px;
+		}
+	}
+
+	.header-area {
+		&.header-center-align {
+			&.header-default-align {
+				.container-fluid {
+					padding: 40px 80px 27px;
+
+		            @media #{$xsl-device} {
+		              padding: 40px 30px 27px;
+		            }
+
+		            @media #{$lg-device} {
+		              padding: 40px 15px 27px;
+		            }
+
+		            @media #{$md-device} {
+		              padding: 24px 15px 22px;
+		            }
+				}
+			}
+		}
+	}
+
+	.product-area {
+		&.product-category-area {
+			.product-category-item {
+				.content {
+					.title {
+						a {
+							&:hover {
+								color: $theme-color4;
+							}
+						}
+					}
+
+					.btn-theme {
+						&.btn-hover-style2 {
+							&:hover {
+								background-color: $theme-color4;
+								border-color: $theme-color4 !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.footer-area  {
+		.container-fluid {
+			padding-right: 80px;
+			padding-left: 80px;
+			@media #{$lg-device} {
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,352 @@
+/*
+-----------------------------------------------------------------------
+	Home Construction CSS
+-----------------------------------------------------------------------
+*/
+
+.construction-wrapper {
+	p {
+		font-family: $font-current-theme6;
+		font-size: 16px;
+		line-height: 1.9;
+	}
+
+	a {
+		font-family: $font-current-theme6;
+	}
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+	  font-family: $font-current-theme6;
+	}
+
+	.btn-theme {
+		font-family: $font-current-theme6;
+		font-size: 18px;
+		text-transform: uppercase;
+		padding: 20px 54px;
+		@media #{$md-device} {
+			font-size: 14px;
+			padding: 14px 46px;
+		}
+
+		&:hover {
+			background-color: $theme-color21;
+		}
+	}
+
+	.page-btn {
+		background-color: #f5b324;
+		color: $white;
+		font-size: 40px;
+		font-weight: $font-weight-bold;
+		font-family: $font-current-theme6;
+		text-transform: uppercase;
+		display: block;
+		text-align: center;
+		padding: 46px 50px;
+		@media #{$md-device} {
+			font-size: 30px;
+			padding: 26px 40px;
+		}
+
+		&:hover {
+			background-color: #232324;
+		}
+	}
+
+	.btn-link {
+		&:hover {
+			&:before {
+				background-color: $theme-color21 !important;
+			}
+		}
+	}
+
+	.header-area {
+		top: calc(0px + 61px);
+		@media #{$md-device} {
+			top: 0;
+		}
+
+        .main-menu {
+          & > li {
+            &.active {
+              a {
+                color: $theme-color21;
+              }
+            }
+            & > a {
+              color: $white;
+
+              span {
+                &:before {
+                  background-color: $theme-color21;
+                }
+              }
+
+              &:hover {
+                color: $theme-color21;
+              }
+            }
+          }
+        }
+
+        .has-submenu {
+          .submenu-nav {
+            & > li {
+              &.has-submenu {
+                a {
+                  color: rgba($white, .7);
+                  &:hover {
+                    color: $white;
+                  }
+                }
+                &.active {
+                  a {
+                    color: $white;
+                  }
+                }
+                & > .submenu-nav {
+                  li {
+                    a {
+                      color: rgba($white, .7);
+                      &:hover {
+                        color: $white;
+                      }
+                    }
+                    &.active {
+                      a {
+                        color: $white;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+	}
+
+	.main-menu {
+		& > li {
+			& > a {
+				font-size: 15px;
+				@media #{$lg-device} {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	.has-submenu {
+		.submenu-nav {
+            @media #{$lg-device} {
+              left: -66%;
+            }
+		}
+	}
+
+	.section-title {
+		margin-bottom: 66px;
+
+		.title {
+			font-family: $font-current-theme6;
+			font-size: 40px;
+			padding-bottom: 25px;
+			text-transform: uppercase;
+		}
+
+		.line-bottom,
+		.line-bottom-center {
+			&:before {
+				background-color: $theme-color21;
+			}
+		}
+	}
+
+	.about-area {
+		padding-top: 171px;
+		padding-bottom: 157px;
+		@media #{$lg-device} {
+			padding-top: 80px;
+			padding-bottom: 85px;
+		}
+		@media #{$md-device} {
+			padding-top: 60px;
+			padding-bottom: 55px;
+		}
+		@media #{$sm-device} {
+			padding-bottom: 0;
+		}
+	}
+
+	.portfolio-single-style-wrap {
+		.portfolio-single-slider {
+			&.owl-theme {
+				.owl-dots {
+					.owl-dot {
+						&.active {
+							span {
+								background-color: $theme-color21;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.service-area {
+		padding: 86px 0 0;
+		@media #{$md-device} {
+			padding: 62px 0 32px;
+		}
+
+		.section-title {
+			margin-bottom: 66px;
+			.title {
+				padding-bottom: 25px;
+			}
+		}
+	}
+
+	.portfolio-area {
+		padding: 61px 0 106px;
+
+		.section-title {
+			margin-bottom: 81px;
+		}
+	}
+
+	.funfact-area {
+		padding: 56px 0 60px;
+		border-bottom: 1px solid #e9e9e9;
+	}
+
+	.blog-area {
+		padding: 66px 0 78px;
+
+		.section-title {
+			margin-bottom: 81px;
+		}
+	}
+	.dots-active-theme {
+	    .slick-dots {
+	        li {
+	        	&.slick-active {
+	            	button {
+	                	&:before {
+	                    	border-color: $theme-color21;
+							background-color: $theme-color21;
+	            		}
+	          		}
+	        	}
+	      	}
+	    }
+	}
+
+	.testimonial-area {
+		padding: 156px 0 158px;
+		@media #{$lg-device} {
+			padding: 85px 0 40px;
+		}
+		@media #{$sm-device} {
+			padding: 72px 0 30px;
+		}
+
+		.testimonial13-content-wrap {
+			.testimonial-item {
+				.client-quote {
+					&:before {
+						background-color: $theme-color21;
+					}
+				}
+			}
+		}
+	}
+
+	.brand-logo-area {
+		padding: 50px 0 81px;
+		@media #{$md-device} {
+			padding: 50px 0 60px;
+		}
+
+		.section-title {
+			margin-bottom: 76px;
+		}
+	}
+
+	.footer-area {
+		&.footer-style-five {
+			.footer-widget-area {
+				.widget-item {
+					.widget-title {
+						font-size: 14px;
+					}
+
+					p {
+						font-size: 14px;
+					}
+
+					.social-icons {
+						a {
+							font-size: 14px;
+						}
+					}
+
+					.about-widget {
+						p {}
+					}
+
+					.contact-info {
+						li {
+							font-family: $font-current-theme6;
+							font-size: 14px;
+
+							a {
+								font-size: 14px;
+							}
+						}
+					}
+
+					.widget-tweet-feed {
+						p {
+							font-size: 14px;
+
+							a {
+								font-size: 14px;
+							}
+						}
+
+						a {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+
+			.footer-bottom {
+				.widget-text {
+					p {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+
+	.scroll-to-top {
+	    background-color: $theme-color21;
+	}
+
+	.preloader-wrap {
+		.preloader {
+			.dots {
+				[class*="bounce"] {
+				    background-color: $theme-color21;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,454 @@
+/*
+-----------------------------------------------------------------------
+	Home Gym & Fitness CSS
+-----------------------------------------------------------------------
+*/
+
+.gym-and-fitness-wrapper {
+	font-family: $font-current-theme6;
+	font-size: 16px;
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: $font-current-theme6;
+	}
+
+	.btn-theme {
+		@media #{$lg-device} {
+			font-size: 14px !important;
+			padding: 15px 40px;
+		}
+
+		&:hover {
+			background-color: $theme-color7;
+		}
+	}
+
+	.main-menu {
+		& > li {
+			& > a {
+				font-size: 14px;
+			}
+		}
+	}
+
+	.header-area {
+        .main-menu {
+          & > li {
+            &.active {
+              a {
+                color: $theme-color7;
+              }
+            }
+            & > a {
+              color: $white;
+
+              span {
+                &:before {
+                  background-color: $theme-color7;
+                }
+              }
+
+              &:hover {
+                color: $theme-color7;
+              }
+            }
+          }
+        }
+
+        .has-submenu {
+          .submenu-nav {
+            & > li {
+              &.has-submenu {
+                a {
+                  color: rgba($white, .7);
+                  &:hover {
+                    color: $white;
+                  }
+                }
+                &.active {
+                  a {
+                    color: $white;
+                  }
+                }
+                & > .submenu-nav {
+                  li {
+                    a {
+                      color: rgba($white, .7);
+                      &:hover {
+                        color: $white;
+                      }
+                    }
+                    &.active {
+                      a {
+                        color: $white;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+	}
+
+	.has-submenu {
+		.submenu-nav {
+            @media #{$lg-device} {
+              left: -66%;
+            }
+		}
+	}
+
+	.section-title {
+		.title {
+			font-size: 64px;
+			font-style: italic;
+			text-transform: uppercase;
+			margin-bottom: -1px;
+			padding-bottom: 0;
+			@media #{$lg-device} {
+				font-size: 55px;
+			}
+			@media #{$md-device} {
+				font-size: 45px;
+			}
+			@media #{$sm-device} {
+				font-size: 36px;
+			}
+		}
+
+		.line {
+			position: relative;
+			display: inline-block;
+
+			&:before {
+				background-color: $theme-color8;
+				content: "";
+				height: 6px;
+				position: absolute;
+				width: 100px;
+			}
+
+			&:after {
+				background-color: $theme-color7;
+				content: "";
+				height: 6px;
+				position: absolute;
+				right: -100px;
+				width: 60px;
+			}
+
+			&.center-line {
+				transform: translate(-50px, 0);
+			}
+		}
+
+		.desc {
+			margin-top: 24px;
+			p {
+				font-size: 24px;
+				line-height: 1.5;
+				@media #{$lg-device} {
+					font-size: 20px;
+				}
+				@media #{$md-device} {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	.home-slider-area {
+		.home-slider-container {
+			.swiper-pagination-style-two {
+				.swiper-pagination-bullet {
+					&.swiper-pagination-bullet-active {
+						background: linear-gradient(to bottom, $theme-color7 0%,$theme-color7 100%);
+					}
+				}
+			}
+		}
+	}
+
+	.about-area {
+		padding-bottom: 122px;
+		padding-top: 151px;
+		@media #{$lg-device} {
+			padding-bottom: 82px;
+			padding-top: 80px;
+		}
+		@media #{$md-device} {
+			padding-bottom: 74px;
+			padding-top: 68px;
+		}
+	}
+
+	.service-area {
+		padding-top: 145px;
+		padding-bottom: 135px;
+		@media #{$lg-device} {
+			padding-top: 65px;
+			padding-bottom: 78px;
+		}
+
+		.service9-content-wrap {
+			.service-item {
+				.thumb {
+					.hover-box {
+						.btn-theme {
+							background-color: $theme-color7;
+						}
+					}
+				}
+
+				.content {
+					.title {
+						a {
+							&:hover {
+								color: $theme-color7;
+							}
+						}
+					}
+
+					.trainner-name {
+						span {
+							color: $theme-color7;
+						}
+					}
+				}
+			}
+
+			.gym-service-slider {
+				.slick-dots {
+					li {
+						&.slick-active {
+							button {
+								&:before {
+									opacity: 1;
+									border: 1px solid $theme-color7;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.team-area {
+		padding: 64px 0 99px;
+		@media #{$lg-device} {
+			padding: 64px 0 74px;
+		}
+		@media #{$md-device} {
+			padding: 64px 0 44px;
+		}
+
+		.team8-content-wrap {
+			.team-item {
+				.thumb {
+					.social-icons {
+						a {
+							&:hover {
+								color: $theme-color7;
+							}
+						}
+					}
+				}
+				.content {
+					.title {
+						color: $theme-color7;
+
+						a {
+							color: $theme-color7;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.pricing-area {
+		padding: 67px 0 85px;
+		@media #{$md-device} {
+			padding: 67px 0 55px;
+		}
+
+		.pricing6-content-wrap {
+			.pricing-item {
+				&:hover {
+					.pricing-item-footer {
+						.pricing-btn {
+							background-color: $theme-color7;
+							color: $white;
+						}
+					}
+				}
+			}	
+		}
+	}
+
+	.funfact5-content-wrap {
+		padding: 106px 0 120px;
+		@media #{$lg-device} {
+			padding: 0 0 20px;
+		}
+	}
+
+	.post17-content-wrap {
+		.post-item {
+			.content {
+				.title {
+					a {
+						&:hover {
+							color: $theme-color7;
+						}
+					}
+					
+				}
+
+				.meta {
+					a {
+						&:hover {
+							color: $theme-color7;
+						}
+					}
+					.category {
+						color: $theme-color7;
+					}
+				}
+			}
+		}
+	}
+
+	.newsletter-area {
+		.section-title {
+			.title {
+				color: $white;
+			}
+
+			.line {
+				@include translate(-50px, 0);
+			}
+		}
+	}
+
+	.product-area {
+		.product-item {
+			.product-thumb {
+				.product-action {
+					.addto-wrap {
+						width: 100%;
+						text-align: center;
+						a {
+							&:hover {
+								background-color: $theme-color7;
+							}
+						}
+					}
+				}
+			}
+
+			.product-info {
+				.title {
+					display: inline-block;
+					font-size: 1.125em;
+					line-height: 1;
+
+					a {
+						&:hover {
+							color: $theme-color7;
+						}
+					}
+				}
+				.prices {
+					text-align: right;
+					font-size: 24px;
+					font-weight: bold;
+					float: right;
+					line-height: 1;
+					display: inline-block;
+
+					.price {
+						color: $theme-color7;
+						font-size: 24px;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-area {
+		&.footer-style-five {
+			.footer-widget-area {
+				.widget-item {
+					.widget-title {
+						font-size: 14px;
+					}
+
+					p {
+						font-size: 14px;
+					}
+
+					.social-icons {
+						a {
+							font-size: 14px;
+						}
+					}
+
+					.about-widget {
+						p {}
+					}
+
+					.contact-info {
+						li {
+							font-family: $font-current-theme6;
+							font-size: 14px;
+
+							a {
+								font-size: 14px;
+							}
+						}
+					}
+
+					.widget-tweet-feed {
+						p {
+							font-size: 14px;
+
+							a {
+								font-size: 14px;
+							}
+						}
+
+						a {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+
+			.footer-bottom {
+				.widget-text {
+					p {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+
+	.scroll-to-top {
+	    background-color: $theme-color7;
+	}
+
+	.preloader-wrap {
+		.preloader {
+			.dots {
+				[class*="bounce"] {
+				    background-color: $theme-color7;
+				}
+			}
+		}
+	}
+}

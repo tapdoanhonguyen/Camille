@@ -1,0 +1,230 @@
+/*
+-----------------------------------------------------------------------
+  Progress Bar CSS
+-----------------------------------------------------------------------
+*/
+
+.progress-bar-item {
+	margin-top: 20px;
+
+	.progress {
+	&-info {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 5px;
+
+		&__title {
+			color: $black-light;
+			font-size: 12px;
+			font-weight: $font-weight-normal;
+			font-family: $font-current-theme1;
+			margin-bottom: 0;
+		}
+
+		&__percent {
+			color: $black-light;
+			font-size: 12px;
+			font-weight: $font-weight-normal;
+			font-family: $font-current-theme1;
+			margin-bottom: 0;
+			top: -5px;
+			position: relative;
+		}
+	}
+
+	&-line {
+		background-color: $white-cf;
+		height: 5px;
+		position: relative;
+
+		&-bar {
+				background-color: $theme-color;
+				height: 100%;
+				width: 0;
+			}
+		}
+	}
+}
+
+.progress-bar-style2-wrap {
+	.progress-bar-item {
+		margin-top: 30px;
+
+		.progress {
+		&-info {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 5px;
+
+			&__title {
+				color: $black-light;
+				font-size: 16px;
+				font-weight: $font-weight-normal;
+				font-family: $font-current-theme1;
+				margin-bottom: 0;
+				@media #{$sm-device} {
+					font-size: 14px;
+				}
+			}
+
+			&__percent {
+				color: $black-light;
+				font-size: 16px;
+				font-weight: $font-weight-normal;
+				font-family: $font-current-theme1;
+				margin-bottom: 0;
+				top: -5px;
+				position: relative;
+				@media #{$sm-device} {
+					font-size: 14px;
+				}
+			}
+		}
+
+		&-line {
+			background-color: $white-cf;
+			height: 8px;
+			position: relative;
+
+			&-bar {
+					background-color: $theme-color;
+					height: 100%;
+					width: 0;
+				}
+			}
+		}
+	}
+}
+
+.progress-bar-style3-wrap {
+	.progress-bar-item {
+		.progress {
+		&-info {
+			&__title {
+				color: $black-8a;
+				font-size: 14px;
+			}
+
+			&__percent {
+				color: $black-8a;
+				font-size: 14px;
+			}
+		}
+
+		&-line {
+			&-bar {
+				    @include gradient-bg2;
+
+				    &.bar-color2 {
+						background-color: #F4524D;
+						background-image: none;
+				    }
+
+				    &.bar-color3 {
+						background-color: #414141;
+						background-image: none;
+				    }
+
+				    &.bar-color4 {
+						background-color: #B97EBB;
+						background-image: none;
+				    }
+				}
+			}
+		}
+	}
+}
+
+.progress-bar-style4-wrap {
+	.progress-bar-item {
+		.progress {
+		&-info {
+			&__title {
+				color: $black-light;
+				font-size: 14px;
+			}
+
+			&__percent {
+				color: $black-light;
+				font-size: 14px;
+			}
+		}
+
+		&-line {
+			&-bar {
+				    background-color: $black-light;
+				}
+			}
+		}
+	}
+}
+
+.ht-pie-chart {
+	text-align: center;
+	position: relative;
+
+	.skill-percent {
+		font-size: 30px;
+		font-weight: $font-weight-bold;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.skill-item {
+	margin-top: 0;
+
+	&__txt{
+		margin-top: 10px;
+
+		.title {
+			color: $black-8a;
+			font-family: $font-current-theme1;
+			font-weight: $font-weight-normal;
+			font-size: 16px;
+		}
+	}
+}
+
+.skill-light {
+	.ht-pie-chart {
+		.skill-percent {
+			display: none;
+		}
+	}
+}
+
+.skill-style-two {
+	.skill-item {
+		&__progress {
+			.ht-pie-chart {}
+		}
+
+		&__txt {
+			margin-top: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			.value {
+				color: $white;
+				font-weight: $font-weight-bold;
+				font-size: 36px;
+				margin-bottom: 13px;
+				line-height: .8;
+			}
+
+			.title {
+				color: $white;
+				font-size: 14px;
+				font-weight: $font-weight-normal;
+				margin-bottom: 0;
+			}
+		}
+	}
+}

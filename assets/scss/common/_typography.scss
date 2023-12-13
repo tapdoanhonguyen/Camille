@@ -1,0 +1,107 @@
+/*
+-----------------------------------------------------------------------
+  Typography CSS
+-----------------------------------------------------------------------
+*/
+
+body {
+  color: $body-color;
+  font-size: 14px;
+  font-family: $body-font;
+  font-weight: $font-weight-normal;
+  line-height: 1.7143;
+  margin: 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: $heading-color;
+  font-family: $heading-font;
+  font-weight: $font-weight-bold;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+a {
+  color: $heading-color;
+  text-decoration: none;
+  @include transition(.3s);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $secondary-color;
+    outline: none;
+    text-decoration: none;
+  }
+
+  img {
+    border: none;
+  }
+}
+
+p {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+img { max-width: 100%; }
+
+iframe { border: none !important; }
+
+.form-control,
+textarea,
+input {
+  @include placeholder {
+    color: $black-light;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+pre,
+ul,
+ol,
+dl,
+dd,
+blockquote,
+address,
+table,
+fieldset { 
+  margin-bottom: 30px;
+}
+
+table p {
+  margin-bottom: 0;
+}
+
+:active,
+:hover,
+:focus { outline: none !important;}
+
+.inner-wrapper {
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $font-current-theme1;
+  }
+}
+
+.element-wrapper {
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $font-current-theme1;
+  }
+}

@@ -1,0 +1,427 @@
+/*
+-----------------------------------------------------------------------
+	Home Business Two CSS
+-----------------------------------------------------------------------
+*/
+
+.business-two-wrapper {
+	font-family: $font-current-theme1;
+	font-size: 16px;
+
+	h1,h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: $font-current-theme1;
+	}
+
+	p {
+		font-size: 14px;
+		line-height: 1.715;
+	}
+
+	.btn-theme {}
+
+	.section-title {
+		margin-bottom: 66px;
+		@media #{$md-device} {
+			margin-bottom: 55px;
+		}
+
+		.title {
+			margin-bottom: 5px;
+			@media #{$md-device} {
+				font-size: 26px;
+			}
+		}
+
+		.desc {
+			p {
+				font-size: 14px;
+				line-height: 2;
+			}
+		}
+	}
+
+	.header-area {
+		.header-action-area {
+			.action-btn {
+				background-color: $theme-color12;
+			}
+		}
+
+        .main-menu {
+          & > li {
+            &.active {
+              a {
+                color: $theme-color12;
+              }
+            }
+            & > a {
+              color: $white;
+
+              span {
+                &:before {
+                  background-color: $theme-color12;
+                }
+              }
+
+              &:hover {
+                color: $theme-color12;
+              }
+            }
+          }
+        }
+
+        .has-submenu {
+          .submenu-nav {
+            & > li {
+              &.has-submenu {
+                a {
+                  color: rgba($white, .7);
+                  &:hover {
+                    color: $white;
+                  }
+                }
+                &.active {
+                  a {
+                    color: $white;
+                  }
+                }
+                & > .submenu-nav {
+                  li {
+                    a {
+                      color: rgba($white, .7);
+                      &:hover {
+                        color: $white;
+                      }
+                    }
+                    &.active {
+                      a {
+                        color: $white;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+	}
+
+	.home-slider-area {
+		.home-slider-container {
+			.swiper-pagination {
+				.swiper-pagination-bullet {
+					&.swiper-pagination-bullet-active {
+						background-color: $theme-color12;
+					}
+				}
+			}
+		}
+	}
+
+	.divider-style19-wrap {
+		.ceo-text-content {
+			border-bottom-color: $theme-color12;
+		}
+
+		.coming-soon-countdown-wrap {
+			width: 500px;
+			margin-bottom: 41px;
+			@media #{$sm-device} {
+				margin: 0 auto 30px;
+			}
+			@media #{$xs-device} {
+				width: 100%;
+				margin: 0 auto 0;
+			}
+
+			.countdown-content {
+				.countdown-timer {
+					li {
+						text-align: left;
+						@media #{$sm-device} {
+							text-align: center;
+						}
+						@media #{$xs-device} {
+							width: 50%;
+							margin-bottom: 30px;
+						}
+
+						span {
+							color: $black-light;
+							font-size: 36px;
+							font-weight: $font-weight-bold;
+						}
+						p {
+							font-size: 18px;
+							font-style: italic;
+							font-family: $font-current-theme2;
+							font-weight: $font-weight-normal;
+						}
+					}
+				}
+			}
+		}
+
+		.btn-wrap {
+			.btn-theme {
+				background-color: $theme-color12;
+				&:last-child {
+					color: $black-light;
+					background-color: $white;
+					margin-left: 11px;
+				
+					&:hover {
+						background-color: $theme-color12;
+					}
+				}
+			}
+		}
+	}
+
+	.work-process-area {
+		.container {
+			padding: 62px 0;
+			@media #{$sm-device} {
+				padding-bottom: 30px;
+			}
+		}
+
+		.work-process2-content-wrap {
+			.process-item {
+				.process-icon {
+					background-color: $theme-color12;
+				}
+			}
+		}
+	}
+
+	.feature-area {
+		padding: 76px 0 98px;
+		@media #{$md-device} {
+			padding: 60px 0 64px;
+		}
+		@media #{$sm-device} {
+			padding: 60px 0 34px;
+		}
+		
+		.section-title {
+			.title {
+				margin-bottom: 15px;
+			}
+		}
+
+		.feature6-content-wrap {
+			.feature-item {
+				.feature-icon {
+					color: $theme-color12;
+				}
+			}
+		}
+	}
+
+	.service-area {
+		.service15-content-wrap {
+			.icon-box-item {
+				.icon-box-content {
+					.btn-link {
+						&:hover {
+							color: $theme-color12;
+						}
+					}
+				}
+
+				&:hover {
+					border-color: $theme-color12;
+
+					.icon-box-content {
+						.title {
+							a {
+								color: $theme-color12;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.team-area {
+		.team6-content-wrap {
+			.team-item {
+				.thumb {
+					.social-icons {
+						a {
+							&:hover {
+								background-color: $theme-color12;
+							}
+						}
+					}
+				}
+
+				.content {
+					.title {
+						a {
+							&:hover {
+								color: $theme-color12;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.portfolio-style2-wrap {
+		.portfolio-item {
+			.portfolio-info {
+				.title {
+					a {
+						&:hover {
+							color: $theme-color12;
+						}
+					}
+				}
+
+				.btn-link {
+
+					&.btn-icon {
+					    &:hover {
+					    	color: $theme-color12;
+
+						    &:after {
+						    	color: $theme-color12;
+						    }
+					    }
+					}
+				}
+			}
+		}
+	}
+
+	.funfact6-content-wrap {
+		.funfact-item {
+			.counter-number {
+				color: $theme-color12;
+			}
+		}
+	}
+
+	.testimonial-area {
+		.testimonial4-content-wrap {
+			.testimonial-item {
+				.client-quote {
+					p {
+						font-family: $font-current-theme1;
+						font-style: italic;
+						font-size: 30px;
+						line-height: 1.6;
+						@media #{$sm-device} {
+							font-size: 20px;
+						}
+					}
+				}
+
+				.client-info {
+					.name {
+						color: $white;
+						display: block;
+
+						&.style2 {
+							color: $theme-color12;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.blog-area {
+		.post5-content-wrap {
+			.post-item {
+				.content {
+					.meta {
+						.category {
+							color: $theme-color12;
+						}
+					}
+
+					.title {
+						a {
+							@include transition(all .1s ease-out);
+							&:hover {
+								color: $theme-color12;
+							}
+						}
+					}
+				}
+
+				.author {
+					ul {
+						li {
+							a {
+								@include transition(all .1s ease-out);
+								&:hover {
+									color: $theme-color12;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.post-slider {
+		.slick-slide {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		&.slick-dotted-style {
+			&.slick-dotted {
+				&.slick-slider {
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.slick-dotted-style {
+		.slick-dots {
+			li {
+				button {
+					&:before {
+						border-color: $black-d6;
+
+						&:hover {
+							border-color: $theme-color12;
+							opacity: .4;
+						}
+					}
+				}
+
+				&.slick-active {
+					button {
+						&:before {
+							border-color: $theme-color12;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.scroll-to-top {
+	    background-color: $theme-color12;
+	}
+
+	.preloader-wrap {
+		.preloader {
+			.dots {
+				[class*="bounce"] {
+				    background-color: $theme-color12;
+				}
+			}
+		}
+	}
+}

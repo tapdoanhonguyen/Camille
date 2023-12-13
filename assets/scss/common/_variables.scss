@@ -1,0 +1,130 @@
+//== Typography
+//
+//## Font and Color for body text, headings, and more.
+$font-current-theme1:	 'Montserrat', sans-serif;
+$font-current-theme2:	 'Vidaloka', serif;
+$font-current-theme3:	 'Poppins', sans-serif;
+$font-current-theme4:	 'Lato', sans-serif;
+$font-current-theme5:	 'Playfair Display', serif;
+$font-current-theme6:	 'Roboto Condensed', sans-serif;
+$font-current-theme7:	 'Noto Serif', serif;
+$font-current-theme8:	 'Herr Von Muellerhoff', cursive;
+$font-current-theme9:	 'Open Sans', sans-serif;
+
+
+$body-font:				  $font-current-theme1;
+$heading-font:			  $font-current-theme2;
+
+
+$font-size-base: 14px;
+
+
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-medium:          500;
+$font-weight-semi-bold:       600;
+$font-weight-bold:            700;
+$font-weight-extrabold:       800;
+$font-weight-black:       	  900;
+
+
+// body color
+$body-color: #8a8a8a;
+
+
+// heading color
+$heading-color: #232324;
+
+
+// theme color
+$theme-color:			#6b56e2;
+$theme-color2:			#e9595e;
+$theme-color3:			#cca4b4;
+$theme-color4:			#6b56e2;
+$theme-color5:			#526df9;
+$theme-color6:			#6d58e2;
+$theme-color7:			#f3498d;
+$theme-color8:			#47479a;
+$theme-color9:			#b9afa1;
+$theme-color10:			#3664e6;
+$theme-color11: 		#182139;
+$theme-color12: 		#d8242b;
+$theme-color13: 		#ed1331;
+$theme-color14: 		#7b4af6;
+$theme-color15: 		#41d988;
+$theme-color16: 		#e74371;
+$theme-color17: 		#d60904;
+$theme-color18: 		#17d0ec;
+$theme-color19: 		#343538;
+$theme-color20: 		#a394df;
+$theme-color21: 		#f5b324;
+$theme-color22: 		#dcb86c;
+$theme-color23: 		#b58113;
+$secondary-color: 		#a394df;
+
+
+// common color
+$black:					#000;
+$black-111:				#111;
+$black-222:				#222;
+$black-333:				#333;
+$black-444:				#444;
+$black-555:				#555;
+$black-666:				#666;
+$black-777:				#777;
+$black-888:				#888;
+$black-999:				#999;
+$black-9f:				#9f9f9f;
+$black-8a:				#8a8a8a;
+$black-65:				#656565;
+$black-20:				#202020;
+$black-d6:				#d6d6d6;
+$black-e6:				#e6e6e6;
+$black-lighter: 		#4d4f56;
+$black-lighter-two: 	#313236;
+$black-light:			#232324;
+
+$white:			 		 #fff;
+$white-f0:			 	 #f0f0f0;
+$white-f1:			 	 #f1f1f1;
+$white-f2:			 	 #f2f2f2;
+$white-f3:			 	 #f3f3f3;
+$white-f4:			 	 #f4f4f4;
+$white-f5:			 	 #f5f5f5;
+$white-f6:			 	 #f6f6f6;
+$white-f7:			 	 #f7f7f7;
+$white-f8:			 	 #f8f8f8;
+$white-f9:			 	 #f9f9f9;
+$white-fa:			 	 #fafafa;
+$white-fb:			 	 #fbfbfb;
+$white-fc:			 	 #fcfcfc;
+$white-fd:			 	 #fdfdfd;
+$white-fe:			 	 #fefefe;
+$white-e6:			 	 #e6e6e6;
+$white-e7:			 	 #e7e7e7;
+$white-c1:			     #c1c1c1;
+$white-c2:			     #c2c2c2;
+$white-c3:			     #c3c3c3;
+$white-cf:			 	 #cfcfcf;
+$white-c8:			 	 #c8c8c8;
+$white-e3:			 	 #e3e3e3;
+$white-e4:			 	 #e4e4e4;
+$white-eb:			 	 #ebebeb;
+
+$gray-lighter:			#e4f0fe;
+$gray-light:			#dfe3f1;
+$gray-ccc:			    #ccc;
+
+
+
+//== Responsive Media Query Variables
+//
+$xlmax-device: 'only screen and (min-width: 1200px) and (max-width: 1599.98px)';
+$xl-device:  'only screen and (min-width: 1200px)';
+$xsl-device: 'only screen and (max-width: 1500px)';
+$xxl-device: 'only screen and (max-width: 1399px)';
+$lg-device:  'only screen and (max-width: 1199px)';
+$md-device:  'only screen and (max-width: 991px)';
+$sm-device:  'only screen and (max-width: 767px)';
+$xs-device:  'only screen and (max-width: 575px)';
+$xxs-device: 'only screen and (max-width: 479px)';

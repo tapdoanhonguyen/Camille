@@ -1,0 +1,231 @@
+/*
+-----------------------------------------------------------------------
+	Home Creative Agency Two CSS
+-----------------------------------------------------------------------
+*/
+
+.creative-agency-two-wrapper {
+	.btn-theme {
+		&:hover {
+			background-color: $theme-color3;
+		}
+	}
+
+	.section-title {
+		.title {
+			@media #{$md-device} {
+				font-size: 30px;
+			}
+		}
+	}
+
+	.portfolio-area {
+		&.portfolio-creative-agency-two {
+			.container {
+				@media #{$md-device} {
+					max-width: 720px;
+					width: 100%;
+				}
+				@media #{$sm-device} {
+					max-width: none;
+					width: 100%;
+				}
+			}
+
+			.container-fluid {
+				padding: 0 15px;
+			}
+			.portfolio-item {
+				position: relative;
+
+				&:before {
+					background-color: $theme-color3;
+				}
+			}
+		}
+	}
+
+	.funfact-area {
+		&.funfact-creative-agency-two {
+			border-bottom: 1px solid $black-d6;
+			padding: 37px 0 25px;
+			.funfact-item {
+				.counter-number {
+					color: $theme-color3;
+				}
+			}
+		}
+	}
+
+	.service-area {
+		&.service-creative-agency-two {
+			padding-top: 52px;
+			padding-bottom: 5px;
+			@media #{$md-device} {
+				padding-top: 2px;
+				padding-bottom: 0;
+			}
+
+			.container {
+				@media #{$md-device} {
+					padding-bottom: 0 !important;
+				}
+			}
+
+			.icon-box-item {
+				.icon-box-header {
+					.number {
+						color: $theme-color3;
+					}
+				}
+
+				.icon-box-content {
+					.btn {
+						&.btn-link {
+							&:hover {
+								color: $theme-color3;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.team-area {
+		&.team-creative-agency-two {
+			@media #{$md-device} {
+				.container {
+					padding: 0 40px;
+				}
+			}
+			.team-item {
+				.thumb {
+					&:before {
+						border-color: $theme-color3;
+					}
+				}
+
+				.content {
+					.title {
+						a {
+							&:hover {
+								color: $theme-color3;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.blog-area {
+		.container {
+			padding-top: 50px;
+			padding-bottom: 70px;
+			@media #{$lg-device} {
+				padding-bottom: 0;
+			}
+		}
+	}
+
+	.post-item {
+		.content {
+			.title {
+				a {
+					&:hover {
+						color: $theme-color3;
+					}
+				}
+				
+			}
+
+			.meta {
+				a {
+					&:hover {
+						color: $theme-color3;
+					}
+				}
+				.category {
+					color: $theme-color3;
+				}
+			}
+		}
+	}
+
+	.bg-color-theme {
+	  background-color: $theme-color3 !important;
+	}
+
+	.line-left {
+		position: relative;
+		&:before {
+			background-color: $theme-color3;
+		}
+	}
+
+	.line-bottom-center {
+		&:before {
+			background-color: $theme-color3;
+		}
+	}
+
+	.slick-dotted-style {
+	  .slick-dots {
+	    li {
+	      &.slick-active {
+	        button {
+	          &:before {
+	            border-color: $theme-color3;
+	          }
+	        }
+	      }
+	    }
+	  }
+	}
+
+	.slick-dotted-style-two {
+	  .slick-dots {
+	    li {
+	      &.slick-active {
+	        button {
+	          &:before {
+	            border: 5px solid $theme-color3;
+	          }
+	        }
+	      }
+	    }
+	  }
+	}
+
+	.post-slider {
+		.slick-slide {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	.footer-area {
+		.footer-widget-area {
+			.widget-item {
+				.widget-title {
+					font-family: $font-current-theme1;
+				}
+			}
+		}
+	}
+
+	.scroll-to-top {
+	    background-color: $theme-color3;
+	}
+
+	.preloader-wrap {
+		.preloader {
+			.dots {
+				[class*="bounce"] {
+				    background-color: $theme-color3;
+				}
+			}
+		}
+	}
+}

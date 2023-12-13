@@ -1,0 +1,265 @@
+/*
+-----------------------------------------------------------------------
+	Home Blog Page CSS
+-----------------------------------------------------------------------
+*/
+
+.blog-page-wrapper {
+	font-family: $font-current-theme6;
+	font-size: 18px;
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: $font-current-theme6;
+	}
+
+	.btn-theme {}
+
+	.section-title {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 58px;
+
+		.title {
+			font-size: 40px;
+			margin-bottom: 0;
+			text-transform: uppercase;
+			pointer-events: none;
+			@include transition(all .2s ease-out);
+			
+			a {
+				color: $black-light;
+				border-bottom: 2px solid $black-light;
+				pointer-events: all;
+			}
+
+			span {
+				color: $black-8a;
+				font-size: 18px;
+				font-weight: $font-weight-normal;
+				float: right;
+				position: relative;
+				top: 20px;
+			}
+
+			&:hover {
+				opacity: .8;
+			}
+		}
+	}
+
+	.header-area {
+		.header-logo-area {
+			margin-top: -8px;
+		}
+
+		&.header-default {
+			&.header-default-align {
+				.container-fluid {
+					padding: 38px 80px 22px;
+					@media #{$lg-device} {
+						padding: 38px 15px 20px;
+					}
+				}
+			}
+		}
+	}
+
+	.has-submenu {
+		&:hover {
+			& > .submenu-nav {
+				margin-top: 39px;
+			}
+		}
+	}
+
+	.blog-area {
+		.container-fluid {
+			padding-top: 75px;
+			padding-bottom: 100px;
+			padding-right: 80px;
+			padding-left: 80px;
+			@media #{$lg-device} {
+				padding-top: 55px;
+				padding-bottom: 70px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+	}
+
+	.sidebar-wrapper {
+		margin-top: 18px;
+
+		.sidebar-item {
+			@media #{$md-device} {
+				margin-bottom: 25px;
+			}
+
+			.sidebar-title {
+				font-family: $font-current-theme6;
+				font-size: 26px;
+				margin-bottom: 30px;
+				@media #{$lg-device} {
+					font-size: 18px;
+					margin-bottom: 12px;
+				}
+			}
+
+			.sidebar-body {
+				.author-posts {
+					.content {
+						.title {
+							font-family: $font-current-theme6;
+							font-size: 16px;
+							margin-bottom: 16px;
+						}
+					}
+				}
+
+				.recent-posts {
+					margin-bottom: 0;
+
+					&-item {
+						margin-bottom: 30px;
+						padding-bottom: 30px;
+
+						a {
+							text-transform: uppercase;
+							font-size: 18px;
+							line-height: 1;
+							margin-top: 0;
+							@media #{$lg-device} {
+								font-size: 15px;
+							}
+
+							img {
+								max-width: 100px;
+								width: 100px;
+								@media #{$lg-device} {
+									max-width: 80px;
+									width: 80px;
+									margin-right: 8px;
+								}
+							}
+						}
+
+						.date {
+							text-transform: uppercase;
+							font-size: 14px;
+						}
+					}
+				}
+
+				.sidebar-list {
+					li {
+						margin-bottom: 11px;
+						line-height: 1.714286;
+
+						a {
+							font-size: 18px;
+						}
+					}
+				}
+
+				.sidebar-archive {
+					ul {
+						li {
+							a {
+								color: $black-8a;
+
+								&:hover {
+									color: $theme-color;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slick-dotted-style {
+		.slick-dots {
+			li {
+				&.slick-active {
+					button {
+						&:before {
+							border-color: $theme-color4;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.scroll-to-top {
+	    background-color: $theme-color4;
+	}
+
+	.preloader-wrap {
+		.preloader {
+			.dots {
+				[class*="bounce"] {
+				    background-color: $theme-color4;
+				}
+			}
+		}
+	}
+
+	.footer-area {
+		padding-top: 80px;
+
+		.footer-widget-area {
+			.widget-item {
+				margin-bottom: 42px;
+
+				.widget-title {
+					font-size: 16px;
+				}
+			}
+
+			.about-widget {
+				p {
+					font-size: 16px;
+					line-height: 1.714286;
+				}
+
+				.social-icons {
+					a {
+						font-size: 16px;
+					}
+				}
+			}
+
+			.widget-list {
+				li {
+					margin-bottom: 15px;
+
+					a {
+						font-size: 16px;
+					}
+				}
+			}
+
+			.widget-post {
+				li {
+					margin-bottom: 10px;
+
+					a {
+						font-size: 16px;
+						line-height: 1.6;
+					}
+				}
+			}
+		}
+
+		.footer-bottom {
+			.widget-text {
+				p {
+					font-size: 13.6px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,186 @@
+/*
+-----------------------------------------------------------------------
+	Home Creative Agency Three CSS
+-----------------------------------------------------------------------
+*/
+
+.creative-agency-three-wrapper {
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+	  font-family: $font-current-theme1;
+	}
+
+	a {
+		&:hover {
+			color: $theme-color4;
+		}
+	}
+
+	.contact-form2-content {
+		@media #{$lg-device} {
+			padding-left: 0;
+		}
+
+		@media #{$sm-device} {
+			margin-top: 0;
+		}
+	}
+
+	.portfolio-area {
+		&.portfolio-creative-agency-three {
+			.container-fluid {
+				padding: 0 72px;
+				@media #{$lg-device} {
+					padding: 0 25px;
+				}
+				@media #{$md-device} {
+					padding: 0 15px;
+				}
+			}
+		}
+
+		.portfolio-item {
+			&:before {
+				background-color: $theme-color4;
+			}
+		}
+	}
+
+	.divider-area {
+		&.divider3-creative-agency-three {
+			.container {
+				padding: 150px 0 160px;
+				@media #{$md-device} {
+					padding: 90px 0 100px;
+				}
+			}
+		}
+	}
+
+	.service-area {
+		&.service-creative-agency-three {
+			padding: 86px 0 20px;
+			@media #{$md-device} {
+				padding: 74px 0 0;
+			}
+		}
+	}
+
+	.progress-bar-item {
+		.progress {
+		&-line {
+			&-bar {
+					background-color: $theme-color4;
+				}
+			}
+		}
+	}
+
+	.testimonial4-content-wrap {
+		.testimonial-item {
+			.client-info {
+				.name {
+					&.style2 {
+						color: $theme-color4;
+					}
+				}
+			}
+
+			.testi-line {
+				background-color: $theme-color4;
+			}
+		}
+	}
+
+	.post3-content-wrap {
+		.post-item {
+			.content {
+				.meta {
+					a {
+						&:hover {
+							color: $theme-color4;
+						}
+					}
+					.category {
+						color: $theme-color4;
+					}
+				}
+			}
+		}
+	}
+
+	.slick-dotted-style {
+	  .slick-dots {
+	    li {
+	      &.slick-active {
+	        button {
+	          &:before {
+	            border-color: $theme-color4;
+	          }
+	        }
+	      }
+	    }
+	  }
+	}
+
+	.slick-dotted-style-two {
+	  .slick-dots {
+	    li {
+	      &.slick-active {
+	        button {
+	          &:before {
+	            border: 5px solid $theme-color4;
+	          }
+	        }
+	      }
+	    }
+	  }
+	}
+
+	.section-title {
+		.title {
+			font-size: 32px;
+			@media #{$lg-device} {
+				font-size: 24px;
+			}
+		}
+	}
+
+	.post-slider {
+		.slick-slide {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		&.slick-dotted-style {
+			&.slick-dotted {
+				&.slick-slider {
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.footer-area {
+		.footer-widget-area {
+			.widget-item {
+				.widget-title {
+					font-family: $font-current-theme1;
+				}
+			}
+		}
+	}
+
+	.scroll-to-top {
+	    background-color: $theme-color4;
+	}
+
+	.preloader-wrap {
+		.preloader {
+			.dots {
+				[class*="bounce"] {
+				    background-color: $theme-color4;
+				}
+			}
+		}
+	}
+}

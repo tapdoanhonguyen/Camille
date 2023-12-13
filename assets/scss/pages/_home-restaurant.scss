@@ -1,0 +1,325 @@
+/*
+-----------------------------------------------------------------------
+	Home Restaurant CSS
+-----------------------------------------------------------------------
+*/
+
+.restaurant-wrapper {
+	font-family: $font-current-theme4;
+	font-size: 16px;
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: $font-current-theme4;
+		font-weight: $font-weight-normal;
+	}
+
+	.btn-theme {}
+
+	.btn-link {
+		color: $black-light;
+		font-size: 18px;
+		position: relative;
+		display: inline-block;
+
+		&:before {
+			background-color: $black-light;
+			content: "";
+			height: .1px;
+			left: -70px;
+			position: absolute;
+			top: 50%;
+			@include translate(0, -50%);
+			width: 50px;
+		}
+
+		&:after {
+			background-color: $black-light;
+			content: "";
+			height: .1px;
+			right: -70px;
+			position: absolute;
+			top: 50%;
+			@include translate(0, -50%);
+			width: 50px;
+		}
+
+		&:hover {
+			color: $theme-color23;
+
+			&:before {
+				background-color: $theme-color23;
+			}
+
+			&:after {
+				background-color: $theme-color23;
+			}
+		}
+	}
+
+	.section-title {
+		margin-bottom: 70px;
+		@media #{$lg-device} {
+			margin-bottom: 55px;
+		}
+
+		.title {
+			font-weight: $font-weight-normal;
+			font-size: 48px;
+			@media #{$lg-device} {
+				font-size: 30px;
+			}
+		}
+
+		.sub-title {
+			color: $theme-color23;
+			font-weight: $font-weight-normal;
+			font-family: $font-current-theme8;
+			font-size: 72px;
+			letter-spacing: 4px;
+			line-height: 46px;
+			margin-bottom: 0;
+			@media #{$lg-device} {
+				font-size: 52px;
+				line-height: 36px;
+			}
+		}
+
+		.desc {
+			p {}
+		}
+	}
+
+	.header-area {
+		&.fixed-left {
+			@media #{$xsl-device} {
+				width: 270px;
+			}
+			@media #{$md-device} {
+				width: 100%;
+			}
+
+			.header-navigation-area  {
+				.main-menu.nav {
+					.has-submenu {
+						a {
+							padding: 12px 40px;
+						}
+						.submenu-nav {
+							&.submenu-nav-mega {
+								@media #{$xsl-device} {
+									padding: 20px 0;
+									width: 700px;
+								}
+							}
+						}
+
+						&:nth-child(5n) {
+							.submenu-nav {
+								.has-submenu {
+									.submenu-nav{
+										@media (max-height: 885px) {
+											bottom: -100px;
+											top: auto;
+										}
+										@media (max-height: 758px) {
+											bottom: -10px;
+											top: auto;
+										}
+									}
+								}
+							}
+						}
+
+						&:last-child {
+							&:hover {
+								.submenu-nav {
+									&.submenu-nav-mega {
+										@media (max-height: 790px) {
+											margin-top: -110px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			&.fixed-left-style-three {
+				.header-action-area {
+					top: 6px;
+					position: relative;
+				}
+			}
+		}
+
+		&.header-restaurant {
+			&.header-area {
+				&.fixed-left {
+					.header-navigation-area {
+						@media (max-height: 950px) {
+							margin-bottom: 10px;
+						}
+					}
+					.header-widget-area {
+						.title {
+							@media (max-height: 950px) {
+								display: none;
+							}
+						}
+						.contact-info {
+							@media (max-height: 950px) {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.about-area {
+		padding: 100px 0;
+		@media #{$lg-device} {
+			padding: 70px 0;
+		}
+	}
+
+	.pricing-area {
+		padding: 80px 0 72px;
+
+		.container-fluid {
+			padding: 0 80px;
+			@media #{$xsl-device} {
+				padding: 0 15px;
+			}
+		}
+
+		.section-title {
+			margin-bottom: 105px;
+			@media #{$lg-device} {
+				margin-bottom: 55px;
+			}
+		}
+	}
+
+	.events-area {
+		padding: 92px 0 66px;
+		@media #{$lg-device} {
+			padding: 75px 0 55px;
+		}
+
+		.section-title {
+			margin-bottom: 84px;
+			@media #{$md-device} {
+				margin-bottom: 55px;
+			}
+		}
+
+		.events-content-wrap {
+			.thumb {
+				@media #{$md-device} {
+					margin-bottom: 40px;
+					text-align: center;
+				}
+			}
+
+			.content {
+				text-align: center;
+				width: 600px;
+				margin: 0 auto;
+				@media #{$lg-device} {
+					width: 100%;
+				}
+
+				.title {
+					font-size: 30px;
+					margin-bottom: 25px;
+					@media #{$lg-device} {
+						font-size: 22px;
+						margin-bottom: 6px;
+					}
+				}
+
+				p {
+					font-size: 18px;
+					line-height: 30px;
+					margin-bottom: 44px;
+					@media #{$lg-device} {
+						font-size: 14px;
+						line-height: 22px;
+						margin-bottom: 24px;
+					}
+				}
+
+				.events-countdown-wrap {
+					margin-bottom: 5px;
+
+					.countdown-content {
+						.countdown-timer {
+							li {
+								span {
+									color: #dcb86c;
+								}
+
+								p {
+									margin-left: 1px;
+								}
+							}
+						}
+					}
+				}
+
+				.btn-event {
+					color: $black-light;
+					font-size: 16px;
+					text-transform: uppercase;
+					display: inline-block;
+					padding: 20px 50px;
+					border: 1px solid rgba(35, 35, 36, 0.2);
+					@media #{$lg-device} {
+						font-size: 13px;
+						padding: 12px 50px;
+					}
+
+					&:hover {
+						color: $white;
+						background-color: #dcb86c;
+						border-color: #dcb86c;
+					}
+				}
+			}
+		}
+	}
+
+	.testimonial-area {
+		padding: 80px 0 60px;
+
+		.section-title {
+			margin-bottom: 53px;
+		}
+	}
+
+	.contact-area {
+		padding: 90px 0 60px;
+
+		.section-title {
+			margin-bottom: 53px;
+		}
+	}
+
+	.scroll-to-top {
+	    background-color: $theme-color23;
+	}
+
+	.preloader-wrap {
+		.preloader {
+			.dots {
+				[class*="bounce"] {
+				    background-color: $theme-color23;
+				}
+			}
+		}
+	}
+}

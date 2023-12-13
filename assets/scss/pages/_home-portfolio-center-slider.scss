@@ -1,0 +1,65 @@
+/*
+-----------------------------------------------------------------------
+	Home Center Slider Portfolio CSS
+-----------------------------------------------------------------------
+*/
+
+.portfolio-center-slider-wrapper {
+	font-family: $font-current-theme1;
+	font-size: 18px;
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: $font-current-theme1;
+	}
+
+	.home-slider-area {
+		margin-top: 115px;
+		@media #{$md-device} {
+			margin-top: 0;
+		}
+		.slick-list {
+			padding-right: 20%;
+			margin-right: 15px;
+			@media #{$sm-device} {
+				padding-right: 0;
+				margin-right: 8px;
+			}
+		}
+
+		.slick-slider {
+		    margin: 0 -15px;
+		}
+
+		.slick-slide {
+		    margin-right: 15px;
+		    margin-left: 15px;
+		}
+
+		.container-fluid {
+			padding: 0 80px;
+			@media #{$lg-device} {
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+		}
+	}
+
+	.footer-area  {
+		.container-fluid {
+			padding: 45px 80px 30px;
+			@media #{$lg-device} {
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+		}
+
+		.footer-widget-area2 {
+			padding-bottom: 0;
+
+			.widget-list {
+				margin-top: 16px;
+			}
+		}
+	}
+}

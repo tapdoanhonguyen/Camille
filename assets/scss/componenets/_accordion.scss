@@ -1,0 +1,296 @@
+/*
+-----------------------------------------------------------------------
+  Accordion CSS
+-----------------------------------------------------------------------
+*/
+
+.accordion {
+	.card {
+		border: 1px solid #e1e1e1;
+		background-color: transparent;
+		margin-bottom: 20px;
+
+		&:not(:last-of-type) {
+			border: 1px solid #e1e1e1;
+		}
+
+		.card-header {
+			border-bottom: 0; 
+			cursor: pointer;
+			background-color: transparent;
+			padding: 0;
+			.title {
+				font-size: 18px;
+				font-weight: $font-weight-semi-bold;
+				margin: 0;
+				padding: 23px 31px 24px;
+				position: relative;
+				@include transition(.4s);
+				@media #{$lg-device}  {
+					padding-right: 40px;
+				}
+
+				&.collapsed {
+					&:before {
+						border-color: $black-light transparent transparent transparent;
+						border-width: 6px;
+						border-style: solid;
+						content: "";
+						position: absolute;
+						right: 20px;
+						top: calc(50% + 3px);
+						@include translate(0, -50%);
+						@include transition(.4s);
+					}
+				}
+
+				&:not(.collapsed) {
+					color: $theme-color;
+					&:before {
+						border-color: $black-light transparent transparent transparent;
+						border-width: 6px;
+						border-style: solid;
+						content: "";
+						position: absolute;
+						right: 20px;
+						top: calc(50% - 3px);
+						transform: translate(0, -50%) rotate(180deg);
+						@include transition(.4s);
+					}
+				}
+			}
+		}
+
+		.card-body {
+			padding: 1px 31px 34px;
+			background-color: transparent;
+			p {
+
+			}
+		}
+	}
+
+	&-style2 {
+		.card {
+			background-color: transparent;
+			margin-bottom: 19px;
+			border: 0;
+			border-bottom: 1px solid #e1e1e1;
+			border-radius: 0;
+
+			&:not(:last-of-type) {
+				border: 0;
+				border-bottom: 1px solid #e1e1e1;
+				border-radius: 0;
+			}
+
+			.card-header {
+				border-bottom: 0; 
+				cursor: pointer;
+				background-color: transparent;
+				padding: 0;
+
+				.title {
+					color: $gray-ccc;
+					font-weight: $font-weight-semi-bold;
+					font-size: 36px;
+					letter-spacing: 1px;
+					margin-bottom: 19px;
+					@include transition(all .4s ease-out);
+					@media #{$md-device} {
+						font-size: 28px;
+						margin-bottom: 10px;
+					}
+
+					&:not(.collapsed) {
+						color: $black-light;
+					}
+				}
+			}
+
+			.card-body {
+				padding: 0 0 30px 0;
+				background-color: transparent;
+				@media #{$md-device} {
+					font-size: 14px;
+				}
+
+				p {
+
+				}
+			}
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+
+	&-style3 {
+		.card {
+			border: none;
+			background-color: $white;
+			margin-bottom: 10px;
+
+			&:not(:last-of-type) {
+				border: none;
+			}
+
+			.card-header {
+				background-color: $white;
+				border-radius: 0;
+				border-bottom: 0; 
+				cursor: pointer;
+				padding: 0;
+
+				.title {
+					font-size: 16px;
+					margin-bottom: 0;
+					padding: 19px 42px 19px 35px;
+					position: relative;
+					@include transition(all .4s ease-out);
+					@media #{$md-device} {
+						font-size: 14px;
+						padding: 19px 42px 19px 25px;
+					}
+
+					&.collapsed {
+						&:before {
+							border-width: 0 2px 2px 0;
+							border-style: solid;
+							border-color: $black-light;
+							content: '';
+							height: 7px;
+							right: 20px;
+							position: absolute;
+							position: absolute;
+							-ms-transform: rotate(45deg) translate(-25%,-25%);
+							transform: rotate(45deg) translate(-25%,-25%);
+							top: calc(50% - 5px);
+							width: 7px;
+							@include transition(all .4s ease-out);
+						}
+					}
+
+					&:not(.collapsed) {
+						color: $theme-color;
+
+						&:before {
+							border-width: 0 2px 2px 0;
+							border-style: solid;
+							border-color: $black-light;
+							content: '';
+							height: 7px;
+							right: 20px;
+							position: absolute;
+							position: absolute;
+							-ms-transform: rotate(225deg) translate(-25%,-25%);
+							transform: rotate(225deg) translate(-25%,-25%);
+							top: calc(50% - 5px);
+							width: 7px;
+							@include transition(all .4s ease-out);
+						}
+					}
+				}
+			}
+
+			.card-body {
+				background-color: $white;
+				padding: 3px 35px 35px;
+				@media #{$md-device} {
+					padding: 0 25px 25px;
+				}
+
+				p {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	&-style4 {
+		.card {
+			border: 1px solid #e1e1e1;
+			background-color: transparent;
+			margin-bottom: 20px;
+
+			&:not(:last-of-type) {
+				border: 1px solid #e1e1e1;
+			}
+
+			.card-header {
+				border-bottom: 0; 
+				cursor: pointer;
+				background-color: transparent;
+				padding: 0;
+				.title {
+					font-size: 14px;
+					font-weight: $font-weight-bold;
+					margin: 0;
+					padding: 26px 40px 26px 30px;
+					position: relative;
+					@include transition(.4s);
+					@media #{$lg-device}  {
+						padding-right: 40px;
+					}
+
+					&.collapsed {
+						&:before {
+							background-color: #000;
+							width: 11px;
+							height: 2px;
+							content: "";
+							position: absolute;
+							right: 20px;
+							top: 50%;
+							@include translate(0, -50%);
+							@include transition(.4s);
+						}
+
+						&:after {
+							background-color: #000;
+							height: 11px;
+							width: 2px;
+							content: "";
+							position: absolute;
+							right: calc(25px - .98px);
+							top: 50%;
+							@include translate(0, -50%);
+							@include transition(.4s);
+						}
+					}
+
+					&:not(.collapsed) {
+						color: $theme-color;
+						padding: 26px 40px 18px 30px;
+
+						&:before {
+							background-color: #000;
+							width: 11px;
+							height: 2px;
+							content: "";
+							position: absolute;
+							right: 20px;
+							top: calc(50% + 3px);
+							@include translate(0, -50%);
+							@include transition(.4s);
+						}
+
+						&:after {
+							height: 0;
+						}
+					}
+				}
+			}
+
+			.card-body {
+				padding: 1px 31px 30px;
+				background-color: transparent;
+				p {
+					font-size: 13px;
+					line-height: 1.714286;
+				}
+			}
+		}
+	}
+}

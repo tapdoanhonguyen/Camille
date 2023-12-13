@@ -1,0 +1,209 @@
+/*
+-----------------------------------------------------------------------
+  Page About Two CSS
+-----------------------------------------------------------------------
+*/
+
+.about-us-two-wrapper {
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+	  font-family: $font-current-theme1;
+	}
+
+	a {
+		&:hover {
+			color: $theme-color4;
+		}
+	}
+
+	.section-title {
+		.title {
+			font-size: 32px;
+			margin-bottom: 7px;
+		}
+		.desc {
+			p {
+				color: $black-8a;
+				font-size: 16px;
+			}
+		}
+	}
+
+	.btn-link {
+		border-bottom: 2px solid #DEDEDE;
+		color: $black-8a;
+		font-size: 14px;
+		padding-top: 0;
+		padding-bottom: 5px;
+
+		&:hover {
+			color: #232324;
+			border-bottom-color: #232324;
+		}
+	}
+
+	.about-inner-area {
+		padding: 236px 0 210px;
+		position: relative;
+		@media #{$md-device} {
+			padding: 120px 0 164px;
+		}
+
+		.about-inner-content {
+			position: relative;
+
+			.content {
+				.title {
+					color: $white;
+
+					span {}
+
+					+ {
+						.breadcrumb-area {
+							margin-top: 0;
+						}
+					}
+				}
+			}
+
+			.play-video-btn {
+				position: absolute;
+				right: 15px;
+				top: 0;
+				@media #{$md-device} {
+					display: none;
+				}
+
+				.play-video-popup {
+					background-color: rgba($white, .2);
+					border-radius: 50%;
+					display: inline-block;
+					position: relative;
+					padding: 15px;
+					&:before {
+						background-color: rgba($white, .2);
+						border-radius: 50%;
+						content: "";
+						height: calc(100% + 2px);
+						left: 50%;
+						position: absolute;
+						padding: 15px;
+						top: 50%;
+						opacity: 0;
+						visibility: hidden;
+						width: calc(100% + 2px);
+						@include translate(-50%, -50%);
+						@include transition(all .5s ease-out);
+					}
+
+					.icon {
+						@include transition(all .5s ease-out);
+					}
+
+					&:hover {
+						&:before {
+							opacity: 1;
+							visibility: visible;
+							height: calc(100% + 34px);
+							width: calc(100% + 34px);
+						}
+
+						.icon {
+							@include scale(0.9);
+						}
+					}
+				}
+			}
+		}
+
+		.breadcrumb-area {
+			position: absolute;
+			bottom: 24px;
+			@media #{$md-device} {
+				position: relative;
+				bottom: 0;
+				margin-top: 20px;
+			}
+
+			.breadcrumb {
+				li {
+					color: $white;
+					font-size: 10px;
+					letter-spacing: 1px;
+
+					a {
+						font-size: 10px;
+						color: $white;
+						letter-spacing: 1px;
+					}
+				}
+			}
+		}
+	}
+
+	.team-area {
+		padding: 81px 0 41px;
+		.team2-content-wrap {
+			.team-item {
+				margin-bottom: 63px;
+				@media #{$md-device} {
+					margin-bottom: 40px;
+				}
+
+				.content {
+					.designation {
+						color: $black-light;
+						font-family: $font-current-theme5;
+						font-weight: $font-weight-medium;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+
+	.testimonial-area {
+		padding: 71px 0 7px;
+
+		.testimonial2-content-wrap {
+			.testimonial-item {
+
+				.client-quote {
+					margin-bottom: 31px;
+					p {
+						font-size: 34px;
+						line-height: 50px;
+						@media #{$sm-device} {
+							font-size: 26px;
+							line-height: 38px;
+						}
+					}
+				}
+
+				.thumb {
+					img {}
+				}
+
+				.client-info {
+					.name {
+						color: $white;
+						font-weight: $font-weight-bold;
+						font-size: 16px;
+						margin-bottom: 3px;
+						line-height: 1;
+					}
+
+					.designation {
+						color: $white;
+						font-size: 12px;
+					}
+				}
+			}
+
+			.testi-quote-icon {
+				margin-bottom: 36px;
+			 	width: auto;
+			}
+		}
+	}
+}

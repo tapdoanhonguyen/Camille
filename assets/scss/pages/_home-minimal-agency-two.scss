@@ -1,0 +1,57 @@
+/*
+-----------------------------------------------------------------------
+	Home Minimal Agency Two CSS
+-----------------------------------------------------------------------
+*/
+
+.minimal-agency-two-wrapper {
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+	  font-family: $font-current-theme1;
+	}
+
+	.section-title {
+		margin-bottom: 52px;
+
+		.title {
+			font-family: $font-current-theme1;
+			font-size: 100px;
+			letter-spacing: -2px;
+			margin-bottom: 0;
+			@media #{$lg-device} {
+				font-size: 50px;
+			}
+			@media #{$md-device} {
+				font-size: 35px;
+			}
+		}
+
+		.desc {
+			p {
+				color: $black-8a;
+				font-size: 16px;
+				line-height: 1.9;
+			}
+		}
+	}
+
+	.portfolio-area {
+		.container-fluid {
+			padding: 0 80px;
+			@media #{$md-device} {
+				padding: 0 15px;
+			}
+		}
+		.portfolio-filter-menu {
+			margin-bottom: 38px;
+		}
+		.portfolio-item {
+			margin-bottom: 65px !important;
+			.portfolio-thumb {
+				&:before {
+					background-color: rgba($theme-color4, .9);
+				}
+			}
+		}
+	}
+}

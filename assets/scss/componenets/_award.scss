@@ -1,0 +1,29 @@
+/*
+-----------------------------------------------------------------------
+  Award CSS
+-----------------------------------------------------------------------
+*/
+
+.award-area {}
+
+.award-content-wrap {
+    .award-item {
+        text-align: center;
+        display: flex !important;
+        justify-content: center;
+        img {
+            opacity: .6;
+            @include transition(all .4s ease-out);
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .award-col3-slider {
+        .slick-track {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

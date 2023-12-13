@@ -1,0 +1,74 @@
+/*
+-----------------------------------------------------------------------
+  Counter CSS
+-----------------------------------------------------------------------
+*/
+
+.countdown-area {}
+
+.countdown-timer {
+  display: inline-block;
+  margin-bottom: 0;
+  width: 100%;
+
+  li {
+    float: left;
+    line-height: 1;
+    text-align: center;
+    margin: 0 0;
+    width: 25%;
+    @media #{$xxs-device} {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+
+    span {
+      color: $theme-color;
+      font-size: 31.5px;
+      font-weight: $font-weight-normal;
+      line-height: 1;
+      margin-bottom: 0;
+    }
+
+    p {
+      color: $black-light;
+      font-size: 1.125em;
+      padding-left: 2px;
+    }
+  }
+}
+
+.countdown-timer {
+  &.text-inline-style {
+    display: inline-block;
+    margin-bottom: 0;
+    width: 100%;
+
+    li {
+      float: left;
+      line-height: 1;
+      text-align: center;
+      margin: 0 0;
+      width: 25%;
+      @media #{$xxs-device} {
+        width: 50%;
+        margin-bottom: 30px;
+      }
+
+      span {
+        color: $theme-color;
+        font-size: 31.5px;
+        font-weight: $font-weight-normal;
+        line-height: 1;
+        margin-bottom: 0;
+      }
+
+      p {
+        color: $black-light;
+        display: inline-block;
+        font-size: 1.125em;
+        padding-left: 2px;
+      }
+    }
+  }
+}

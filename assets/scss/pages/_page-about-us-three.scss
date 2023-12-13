@@ -1,0 +1,135 @@
+/*
+-----------------------------------------------------------------------
+  Page About Three CSS
+-----------------------------------------------------------------------
+*/
+
+.about-us-three-wrapper {
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+	  font-family: $font-current-theme1;
+	}
+
+	.about-inner-area {
+		padding: 150px 0 190px;
+		position: relative;
+		@media #{$lg-device} {
+			padding: 150px 0 160px;
+		}
+		@media #{$md-device} {
+			padding: 90px 0 100px;
+		}
+
+		.about-inner-content {
+			position: relative;
+
+			.content {
+				.title {
+					color: $white;
+					@media #{$lg-device} {
+						font-size: 32px;
+						line-height: 38px;
+					}
+					@media #{$xs-device} {
+						font-size: 24px;
+						line-height: 30px;
+					}
+
+					+ {
+						.breadcrumb-area {
+							margin-top: 42px;
+							@media #{$lg-device} {
+								margin-top: 22px;
+							}
+						}
+					}
+				}
+			}
+			
+			.thumb {
+				position: absolute;
+				width: 120%;
+				margin-bottom: 0;
+				left: 22%;
+				top: -100px;
+				@media #{$md-device} {
+					display: none;
+				}
+			}
+		}
+
+		.breadcrumb-area {
+			.breadcrumb {
+				li {
+					color: $white;
+					font-size: 10px;
+					letter-spacing: 1px;
+
+					a {
+						font-size: 10px;
+						color: $white;
+						letter-spacing: 1px;
+					}
+				}
+			}
+		}
+	}
+
+	.testimonial-area {
+		padding: 71px 0 7px;
+
+		.testimonial2-content-wrap {
+			.testimonial-item {
+
+				.client-quote {
+					margin-bottom: 31px;
+					p {
+						font-size: 34px;
+						line-height: 50px;
+					}
+				}
+
+				.thumb {
+					img {}
+				}
+
+				.client-info {
+					.name {
+						color: $white;
+						font-weight: $font-weight-bold;
+						font-size: 16px;
+						margin-bottom: 3px;
+						line-height: 1;
+					}
+
+					.designation {
+						color: $white;
+						font-size: 12px;
+					}
+				}
+			}
+
+			.testi-quote-icon {
+				margin-bottom: 36px;
+			 	width: auto;
+			}
+		}
+	}
+
+	.video-divider-style4-wrap {
+		@media #{$md-device} {
+			padding: 0;
+		}
+
+		 .video-divider-wrap {
+		 	.content {
+		 		p {
+					@media #{$md-device} {
+						font-size: 30px;
+						line-height: 40px;
+					}
+		 		}
+		 	}
+		 }
+	}
+}

@@ -1,0 +1,165 @@
+/*
+-----------------------------------------------------------------------
+	Home App Landing CSS
+-----------------------------------------------------------------------
+*/
+
+.app-landing-wrapper {
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+	  font-family: $font-current-theme1;
+	}
+
+	p {
+		line-height: 2.15;
+	}
+
+	.section-title {
+		margin-bottom: 52px;
+		.title {
+			font-size: 32px;
+			letter-spacing: -1px;
+			margin-bottom: 20px;
+			padding-bottom: 32px;
+			@media #{$lg-device} {
+				font-size: 24px;
+			}
+
+			&.line-bottom {
+				&:before {
+					width: 40px;
+				}
+			}
+		}
+
+		.desc {
+			p {
+				color: $black-light;
+			}
+		}
+
+		.line-bottom {
+			&:before {
+				background-color: $theme-color5;
+			}
+		}
+	}
+
+	.header-area {
+		.header-action-area {
+			.btn-menu {
+				color: $white;
+				@media #{$md-device} {
+					color: $black-8a;
+				}
+			}
+		}
+	}
+
+	.icon-list {
+		ul {
+			li {
+				&:before {
+					color: $black-light;
+				}
+			}
+		}
+	}
+
+	.feature5-content-wrap {
+		.feature-item {
+			.icon-box-item {
+				.heading {
+					.icon {
+						color: $theme-color5;
+					}
+				}
+			}
+		}
+	}
+
+	.pricing5-content-wrap {
+		.pricing-item {
+			.pricing-item-content {
+				.discount {
+					color: $theme-color5;
+				}
+			}
+
+			.pricing-item-footer {
+				.pricing-btn {
+					background-color: $theme-color5;
+
+					  &:hover {
+						background-color: $black-light;
+					  }
+				}
+			}
+		}
+	}
+
+	.divider-style14-wrap {
+		.section-title {
+			margin-bottom: 41px;
+		}
+	}
+
+	.divider-style15-wrap {
+		
+	}
+
+	.btn-theme {
+	  &.btn-hover-style2 {
+	    &:hover {
+	      color: $white;
+	      background-color: $theme-color5;
+	      border-color: $theme-color5 !important;
+	    }
+	  }
+
+	  &:hover {
+	    color: $white;
+	    background-color: $theme-color5;
+	  }
+	}
+
+	.scroll-to-top {
+	    background-color: $theme-color5;
+	}
+
+	.preloader-wrap {
+		.preloader {
+			.dots {
+				[class*="bounce"] {
+				    background-color: $theme-color5;
+				}
+			}
+		}
+	}
+
+	.footer-area {
+		.footer-bottom-style2 {
+			.widget-menu {
+				.nav {
+					li {
+						a {
+							&:hover {
+								color: $theme-color5;
+							}
+						}
+					}
+				}
+			}
+
+			.widget-social {
+				.social-icons {
+					a {
+						&:hover {
+							color: $theme-color5;
+						}
+					}
+				}
+			}
+		}
+	}
+}

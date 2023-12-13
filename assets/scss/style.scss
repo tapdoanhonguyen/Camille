@@ -1,0 +1,82 @@
+// Table of contents
+@import "tableofcontent";
+
+// imported styles
+@import "common/imported";
+
+// Base
+@import "common/variables";
+@import "common/mixins";
+@import "common/rfs";
+
+// Typography
+ @import "common/typography";
+
+// Components Styles
+@import "componenets/common";
+@import "componenets/navbar";
+@import "componenets/section-title";
+@import "componenets/about";
+@import "componenets/award";
+@import "componenets/service";
+@import "componenets/team";
+@import "componenets/icon-box";
+@import "componenets/testimonial";
+@import "componenets/portfolio";
+@import "componenets/gallery";
+@import "componenets/accordion";
+@import "componenets/divider";
+@import "componenets/feature";
+@import "componenets/form";
+@import "componenets/pricing";
+@import "componenets/brand-logo";
+@import "componenets/funfact";
+@import "componenets/counter";
+@import "componenets/list-icon";
+@import "componenets/progress-bar";
+@import "componenets/work-process";
+@import "componenets/shop";
+@import "componenets/blog";
+
+// Header
+@import "header/header";
+
+// Banner Styles
+@import "componenets/banner";
+
+// Pages
+@import "pages/home-creative-agency-one";
+@import "pages/home-creative-agency-two";
+@import "pages/home-creative-agency-three";
+@import "pages/home-modern-agency";
+@import "pages/home-business-one";
+@import "pages/home-business-two";
+@import "pages/home-interactive-business";
+@import "pages/home-app-landing";
+@import "pages/home-minimal-agency-one";
+@import "pages/home-minimal-agency-two";
+@import "pages/home-minimal-agency-sidebar";
+@import "pages/home-construction";
+@import "pages/home-gym-and-fitness";
+@import "pages/home-dentits";
+@import "pages/home-spa-and-beauty";
+@import "pages/home-barber";
+@import "pages/home-restaurant";
+@import "pages/home-car-services";
+@import "pages/home-blog";
+@import "pages/home-freelancer-one";
+@import "pages/home-freelancer-two";
+@import "pages/home-portfolio-center-slider";
+@import "pages/home-shop-minimal";
+@import "pages/home-shop-modern";
+@import "pages/home-shop-sidebar";
+@import "pages/home-shop-parallax";
+@import "pages/home-music";
+
+@import "pages/page-about-us";
+@import "pages/page-about-us-one";
+@import "pages/page-about-us-two";
+@import "pages/page-about-us-three";
+
+// Footer
+@import "footer/footer";

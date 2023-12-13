@@ -1,0 +1,56 @@
+/*
+-----------------------------------------------------------------------
+  Page About One CSS
+-----------------------------------------------------------------------
+*/
+
+.about-us-one-wrapper {
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+	  font-family: $font-current-theme1;
+	}
+
+	a {
+		&:hover {
+			color: $theme-color4;
+		}
+	}
+
+	.btn-link {
+		border-bottom: 2px solid #DEDEDE;
+		color: $black-8a;
+		font-size: 14px;
+		padding-top: 0;
+		padding-bottom: 5px;
+
+		&:hover {
+			color: #232324;
+			border-bottom-color: #232324;
+		}
+	}
+
+	.about-inner-area {
+		position: relative;
+	}
+
+	.breadcrumb-area {
+		.breadcrumb {
+			li {
+				color: $black-8a;
+				font-size: 14px;
+				
+				a {
+					color: $black-8a;
+					font-size: 14px;
+				}
+
+				&.breadcrumb-sep {}
+				&:hover {
+					a {
+						color: $theme-color;
+					}
+				}
+			}
+		}
+	}
+}

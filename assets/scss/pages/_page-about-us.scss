@@ -1,0 +1,119 @@
+/*
+-----------------------------------------------------------------------
+  Page About Us CSS
+-----------------------------------------------------------------------
+*/
+
+.about-us-wrapper {
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+	  font-family: $font-current-theme1;
+	}
+
+	a {
+		@include transition(all .2s ease-out);
+
+		&:hover {
+			color: $theme-color;
+		}
+	}
+
+	.section-title {
+		.title {
+			font-family: $font-current-theme5;
+			font-size: 48px;
+			letter-spacing: -2px;
+			font-style: italic;
+			margin-bottom: 15px;
+			@media #{$md-device} {
+				font-size: 38px;
+			}
+		}
+
+		.desc {
+			font-size: 16px;
+			line-height: 24px;
+			@media #{$md-device} {
+				font-size: 14px;
+			}
+
+			+ {
+				.single-image {
+					margin-top: 36px;
+				}
+			}
+		}
+	}
+
+	.about-inner-area {
+		padding: 271px 0 182px;
+		position: relative;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: right;
+		@media #{$lg-device} {
+			padding: 170px 0 82px;
+		}
+		@media #{$md-device} {
+			padding: 100px 0 42px;
+		}
+
+		.about-inner-content {
+			.content {
+				.title {
+					font-size: 120px;
+					font-weight: $font-weight-black;
+					font-family: $font-current-theme5;
+					line-height: 105px;
+					letter-spacing: -5px;
+					margin-bottom: 40px;
+					@media #{$lg-device} {
+						font-size: 80px;
+						line-height: 74px;
+						letter-spacing: 1px;
+						margin-bottom: 44px;
+						width: 500px;
+					}
+					@media #{$md-device} {
+						font-size: 60px;
+						line-height: 65px;
+					}
+					@media #{$xs-device} {
+						width: auto;
+					}
+				}
+
+				.info-list{
+					.list-item {
+						color: $black-light;
+						font-weight: $font-weight-bold;
+						font-size: 20px;
+						margin-bottom: 11px;
+
+						a {
+							margin-left: 6px;
+						}
+
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.social-text {
+		background-color: #fff5f5;
+		padding: 34px 0;
+
+		a {
+			font-size: 24px;
+			font-weight: 700;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

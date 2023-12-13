@@ -1,0 +1,160 @@
+/*
+-----------------------------------------------------------------------
+	Home Shop Modern CSS
+-----------------------------------------------------------------------
+*/
+
+.shop-modern-wrapper {
+	font-family: $font-current-theme1;
+	font-size: 18px;
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: $font-current-theme1;
+	}
+
+	.section-title {
+		.title {
+			font-family: $font-current-theme2;
+			font-size: 48px;
+			margin-bottom: 66px;
+			@media #{$lg-device} {
+				font-size: 38px;
+				margin-bottom: 46px;
+			}
+		}
+	}
+
+	.has-submenu {
+		& > .submenu-nav {
+			& > li.has-submenu {
+				& > .submenu-nav {
+					@media #{$lg-device} {
+						left: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	.product-area {
+		&.product-category-area {
+			.container-fluid {
+				padding: 70px 80px 50px;
+				@media #{$lg-device} {
+					padding: 70px 15px 36px;
+				}
+				@media #{$md-device} {
+					padding: 70px 15px 16px;
+				}
+			}
+
+			.product-category-content-wrap {
+				.product-category-item {
+					.thumb {
+						&:after {
+							background-color: $theme-color4;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.product-item {
+		margin-bottom: 58px;
+		
+		.product-thumb {
+			.product-action {
+				.add-wishlist {
+					.icon {
+						&:hover {
+							color: $theme-color4;
+						}
+					}
+				}
+
+				.addto-wrap {
+					a {
+						&:hover {
+							background-color: $theme-color4;
+						}
+					}
+				}
+			}
+		}
+
+		.product-info {
+			.title {
+				a {
+					&:hover {
+						color: $theme-color4;
+					}
+				}
+			}
+		}
+	}
+
+	.blog-area {
+		.post3-content-wrap {
+			.post-item {
+				.content {
+					padding: 24px;
+					.title {
+						font-family: $font-current-theme2;
+						font-weight: $font-weight-normal;
+						a {
+							&:hover {
+								color: $theme-color4;
+							}
+						}
+					}
+
+					p {
+						font-size: 14px;
+					}
+
+					.meta {
+						a {
+							&:hover {
+								color: $theme-color4;
+							}
+						}
+						.category {
+							color: $theme-color4;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.post-slider {
+		.slick-slide {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		&.slick-dotted-style {
+			&.slick-dotted {
+				&.slick-slider {
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.scroll-to-top {
+	    background-color: $theme-color4;
+	}
+
+	.preloader-wrap {
+		.preloader {
+			.dots {
+				[class*="bounce"] {
+				    background-color: $theme-color4;
+				}
+			}
+		}
+	}
+}
+

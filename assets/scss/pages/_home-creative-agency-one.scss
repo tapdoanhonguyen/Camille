@@ -1,0 +1,227 @@
+/*
+-----------------------------------------------------------------------
+	Home Creative Agency One CSS
+-----------------------------------------------------------------------
+*/
+
+.creative-agency-wrapper {
+	.section-title {
+		.desc {
+			color: $black-light;
+		}
+	}
+
+	.service-area {
+		.service2-content-wrap {
+			.icon-box-item {
+				&:hover {
+					background-color: $theme-color20;
+				}
+			}
+			.grid {
+				&:last-child {
+					.icon-box-item {
+						&:hover {
+							background-color: $theme-color20;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.testimonial-area {
+		position: relative;
+		&:before {
+			background-color: $black-light;
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: .4;
+			z-index: -1;
+		}
+		.testimonial2-content-wrap {
+			.testimonial-item {
+				.client-info {
+					.name {
+						&.style2 {
+							color: $theme-color20;
+						}
+					}
+				}
+
+				.testi-line {
+					background-color: $theme-color20;
+				}
+			}
+		}
+	}
+
+	.slick-dotted-style-two {
+	  .slick-dots {
+	    li {
+	      &.slick-active {
+	        button {
+	          &:before {
+	            border-color: $theme-color20;
+	          }
+	        }
+	      }
+	    }
+	  }
+	}
+
+	.portfolio-filter-menu {
+		li {
+			&.active {
+				color: $theme-color20;
+			}
+
+			&:hover {
+				color: $theme-color20;
+			}
+		}
+
+		&.line-bottom {
+			li {
+				&:before {
+					background-color: $theme-color20;
+				}
+			}
+		}
+
+		&.filter-style-2 {
+			li {
+				&.active {
+					color: $theme-color20;
+				}
+
+				&:hover {
+					color: $theme-color20;
+				}
+			}
+		}
+	}
+
+	.portfolio-item {
+		&:before {
+			background-color: $theme-color20;
+		}
+	}
+
+	.accordion {
+		.card {
+			.card-header {
+				.title {
+					&:not(.collapsed) {
+						color: $theme-color20;
+					}
+				}
+			}
+		}
+	}
+
+	.icon-box-style2 {
+		.icon-box-item {
+			.icon-box-icon {
+				.icon {
+					color: $theme-color20;
+				}
+			}
+		}
+	}
+
+	.feature2-content-wrap {
+		.feature-item {
+			.feature-number {
+				.number {
+					background-color: $theme-color20;
+				}
+			}
+		}
+	}
+
+	.post2-content-wrap {
+		.post-item {
+			.content {
+				.title {
+					a {
+						&:hover {
+							color: $theme-color20;
+						}
+					}
+					
+				}
+
+				.meta {
+					a {
+						&:hover {
+							color: $theme-color20;
+						}
+					}
+
+					.category {
+						color: $theme-color20;
+					}
+				}
+			}
+		}
+	}
+
+	.line-bottom-center {
+		&:before {
+			background-color: $theme-color20;
+		}
+	}
+
+	.line-bottom {
+		&:before {
+			background-color: $theme-color20;
+		}
+	}
+
+	.btn-theme {
+		&:hover {
+			background-color: $theme-color20;
+		}
+	}
+
+	.btn-contact {
+		&:hover {
+			background-color: $theme-color20 !important;
+		}
+	}
+
+	.slick-dotted-style {
+	  &.dots-active-theme {
+	    .slick-dots {
+	      li {
+	        &.slick-active {
+	          button {
+	            &:before {
+	              border-color: $theme-color20;
+	            }
+	          }
+	        }
+	      }
+	    }
+	  }
+	}
+
+	.scroll-to-top {
+	    background-color: $theme-color20;
+	}
+
+	.preloader-wrap {
+		.preloader {
+			.dots {
+				[class*="bounce"] {
+				    background-color: $theme-color20;
+				}
+			}
+		}
+	}
+}

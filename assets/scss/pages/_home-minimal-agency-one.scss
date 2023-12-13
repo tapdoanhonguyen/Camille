@@ -1,0 +1,63 @@
+/*
+-----------------------------------------------------------------------
+	Home Minimal Agency One CSS
+-----------------------------------------------------------------------
+*/
+
+.minimal-agency-one-wrapper {
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+	  font-family: $font-current-theme1;
+	}
+
+	.section-title {
+		.title {
+		  font-family: $font-current-theme2;
+		  font-size: 60px;
+		  @media #{$lg-device} {
+			font-size: 46px;
+			margin-bottom: 0;
+		  }
+		  @media #{$md-device} {
+			font-size: 35px;
+		  }
+		  @media #{$xs-device} {
+			font-size: 26px;
+		  }
+		}
+
+		.desc {
+			p {
+				color: $black-lighter;
+				font-size: 16px;
+				line-height: 1.9;
+				@media #{$lg-device} {
+					font-size: 15px;
+				}
+				@media #{$xs-device} {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	.portfolio-item {
+		&:before {
+			background-color: $theme-color6;
+		}
+	}
+
+	.scroll-to-top {
+	    background-color: $theme-color6;
+	}
+
+	.preloader-wrap {
+		.preloader {
+			.dots {
+				[class*="bounce"] {
+				    background-color: $theme-color6;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,99 @@
+/*
+-----------------------------------------------------------------------
+  Brand Logo CSS
+-----------------------------------------------------------------------
+*/
+
+.brand-logo-area {
+    .container-fluid {
+        padding: 0 68px;
+        @media #{$lg-device} {
+            padding: 0 0;
+        }
+    }
+}
+
+.brand-logo-content {
+    vertical-align: middle;
+    align-items: center;
+    
+    .brand-logo-item {
+        text-align: center;
+        display: flex !important;
+        justify-content: center;
+        img {
+            opacity: .6;
+            @include transition(all .4s ease-out);
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .brand-logo-slider {
+        .slick-track {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.brand-logo2-content {
+    .brand-logo-item {
+        text-align: center;
+        display: flex !important;
+        justify-content: center;
+        img {
+            opacity: 1;
+            @include transition(all .4s ease-out);
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .content {
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 46px;
+    }
+
+    .brand-logo-slider {
+        .slick-track {
+            display: flex;
+            align-items: center;
+            margin: 0 -12px;
+        }
+    }
+
+    .slick-track-auto {
+        .slick-track {
+            margin: 0 auto;
+        }
+    }
+}
+
+.brand-opacity-content {
+    .brand-logo-item {
+        img {
+            opacity: .2;
+            @include transition(all .4s ease-out);
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.brand-opacity-content6 {
+    .brand-logo-item {
+        img {
+            opacity: .6;
+            @include transition(all .4s ease-out);
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

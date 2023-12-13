@@ -1,0 +1,213 @@
+/*
+-----------------------------------------------------------------------
+  Work Process CSS
+-----------------------------------------------------------------------
+*/
+
+.work-process-area {
+	.work-process-content-wrap {
+		.process-content {
+			text-align: center;
+			.inner {
+				position: relative;
+				display: inline-block;
+
+				.process-item {
+					display: inline-block;
+					text-align: left;
+					top: 8.20312%;
+					left: 16.6375%;
+					position: absolute;
+					margin-left: -19px;
+					margin-top: -19px;
+
+					.number {
+						border-radius: 50%;
+						display: inline-block;
+						cursor: pointer;
+						height: 38px;
+						position: relative;
+						width: 38px;
+						z-index: 1;
+
+						span {
+							background-color: $theme-color;
+							border-radius: 50%;
+							display: inline-block;
+							color: $white;
+							cursor: pointer;
+							font-size: 14px;
+							height: 38px;
+							line-height: 38px;
+							position: relative;
+							text-align: center;
+							width: 38px;
+							z-index: 2;
+							@media #{$sm-device} {
+								font-size: 11px;
+								height: 26px;
+								line-height: 26px;
+								width: 26px;
+							}
+						}
+
+						&:before {
+							background-color: $theme-color;
+							border-radius: 50%;
+							content: '';
+							display: block;
+							height: 38px;
+							left: 50%;
+							top: 50%;
+							position: absolute;
+							width: 38px;
+							margin: -19px auto auto -19px;
+							@include transform-origin (50% 50%);
+							z-index: -1;
+							-webkit-animation: pulsate 3s cubic-bezier(0.2, 1, 0.2, 1) infinite;
+							animation: pulsate 3s cubic-bezier(0.2, 1, 0.2, 1) infinite;
+						}
+					}
+
+					.content {
+						background-color: $theme-color;
+						padding: 34px 40px;
+						position: absolute;
+						max-width: 350px;
+						text-align: left;
+						width: 350px;
+						bottom: 0;
+						left: 50%;
+						@include translate(-50%, -64px);
+						z-index: 2;
+						@media #{$md-device} {
+							padding: 10px;
+							max-width: none;
+							width: 205px;
+							left: 0;
+						}
+						@media #{$sm-device} {
+							width: auto;
+						}
+
+						&:before {
+							bottom: -20px;
+							content: '';
+							border-top: 20px solid #6b56e2;
+							border-right: 20px solid transparent;
+							border-left: 20px solid transparent;
+							left: 50%;
+							position: absolute;
+							@include translate(-50%, 0);
+						}
+						.title {
+							color: $white;
+							font-size: 18px;
+							@media #{$md-device} {
+								font-size: 14px;
+								margin-bottom: 10px;
+							}
+						}
+
+						p {
+							color: $white;
+							font-size: 14px;
+							@media #{$md-device} {
+								font-size: 12px;
+							}
+						}
+					}
+
+					&:nth-child(1) {
+						left: 40.4553%;
+						top: 49.0234%;
+					}
+
+					&:nth-child(2) {
+						left: 40.4553%;
+						top: 49.0234%;
+					}
+
+					&:nth-child(3) {
+						top: 79.1016%;
+						left: 65.324%;
+					}
+
+					&:nth-child(4) {
+						top: 56.25%;
+						left: 94.9212%;
+					}
+
+					&:nth-child(5) {
+						top: 19.7266%;
+						left: 73.5552%;
+					}
+				}
+			}
+		}
+	}
+
+	.work-process2-content-wrap {
+		padding: 0 15px;
+		text-align: center;
+
+		.process-item {
+			text-align: center;
+			@media #{$md-device} {
+				margin-bottom: 40px;
+			}
+
+			&:before {
+				border-top: 2px dashed $white-cf;
+				content: "";
+				display: block;
+				left: calc(0px - (100% - 170px)/2);
+				left: -webkit-calc(0px - (100% - 170px)/2);
+				position: absolute;
+				top: 34px;
+				width: calc(100% - 170px);
+				width: -webkit-calc(100% - 170px);
+				@media #{$xs-device} {
+					display: none;
+				}
+			}
+
+			.process-icon {
+				background-color: $theme-color;
+				border-radius: 50%;
+				color: $white;
+				display: inline-block;
+				font-size: 30px;
+				height: 70px;
+				line-height: 30px;
+				margin-bottom: 30px;
+				padding: 20px;
+				text-align: center;
+				width: 70px;
+			}
+
+			.process-content {
+				.title {
+					font-size: 16px;
+					margin-bottom: 8px;
+				}
+
+				p {}
+			}
+
+			&.border-none {
+				&:before {
+					display: none;
+				}
+			}
+
+			&.sm-after-none {
+				&:before {
+					@media #{$md-device} {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

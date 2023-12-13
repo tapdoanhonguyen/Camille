@@ -1,0 +1,54 @@
+/*
+-----------------------------------------------------------------------
+	Home Freelancer Two CSS
+-----------------------------------------------------------------------
+*/
+
+.freelancer-two-wrapper {
+	font-family: $font-current-theme1;
+	font-size: 18px;
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: $font-current-theme1;
+	}
+
+	.btn-theme {}
+
+	.section-title {
+		margin-bottom: 82px;
+		@media #{$md-device} {
+			margin-bottom: 52px;
+		}
+
+		.icon-box-icon {
+			margin-bottom: 14px;
+
+			.svg-icon {
+				line-height: 68px;
+				font-size: 68px;
+				width: 68px;
+				height: 68px;
+				color: #a6306a;
+				background-image: linear-gradient(to right, #a6306a 0%, #e92059 50%, #a6306a 100%);
+				-webkit-background-clip: text;
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+				margin: 0 auto;
+			}
+		}
+
+		.title {
+			color: $black-light;
+			font-weight: $font-weight-normal;
+			font-size: 36px;
+			letter-spacing: -2px;
+		}
+	}
+
+	.portfolio-area {
+		.portfolio-item {
+			margin-bottom: 30px;
+		}
+	}
+}

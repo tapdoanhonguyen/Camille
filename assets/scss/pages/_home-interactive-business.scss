@@ -1,0 +1,79 @@
+/*
+-----------------------------------------------------------------------
+	Home Business Interactive One CSS
+-----------------------------------------------------------------------
+*/
+
+.interactive-business-wrapper {
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+	  font-family: $font-current-theme1;
+	}
+
+	.section-title {
+		.title {
+			font-size: 40px;
+			@media #{$md-device} {
+				font-size: 30px;
+			}
+		}
+	}
+
+	.service-area {
+		.container-fluid {
+			padding-top: 70px;
+			padding-bottom: 70px;
+			padding-left: 80px;
+			padding-right: 80px;
+			@media #{$lg-device} {
+				padding-left: 15px;
+				padding-right: 15px;
+				padding-top: 60px;
+				padding-bottom: 25px;
+			}
+			@media #{$md-device} {
+				padding-bottom: 0;
+			}
+		}
+
+		.service7-content-wrap {
+			.service-item {
+				@media #{$md-device} {
+					margin-bottom: 30px;
+				}
+			}
+		}
+	}
+
+	.newsletter-content-wrap {
+		.newsletter-content {
+			.section-title {
+				@media #{$sm-device} {
+					text-align: center;
+				}
+				.title {
+					@media #{$lg-device} {
+						font-size: 30px;
+					}
+					@media #{$xs-device} {
+						font-size: 26px;
+					}
+				}
+			}
+		}
+	}
+
+	.post-slider {
+		.slick-slide {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		&.slick-dotted-style {
+			&.slick-dotted {
+				&.slick-slider {
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+}

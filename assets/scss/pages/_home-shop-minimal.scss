@@ -1,0 +1,90 @@
+/*
+-----------------------------------------------------------------------
+	Home Shop Minimal CSS
+-----------------------------------------------------------------------
+*/
+
+.shop-minimal-wrapper {
+	font-family: $font-current-theme1;
+	font-size: 18px;
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: $font-current-theme1;
+	}
+
+	.section-title {
+		.title {
+			font-family: $font-current-theme2;
+			font-size: 48px;
+			margin-bottom: 66px;
+		}
+	}
+
+	.product-item {
+		margin-bottom: 58px;
+		
+		.product-thumb {
+			.product-action {
+				.add-wishlist {
+					.icon {
+						&:hover {
+							color: $theme-color4;
+						}
+					}
+				}
+
+				.addto-wrap {
+					a {
+						&:hover {
+							background-color: $theme-color4;
+						}
+					}
+				}
+			}
+		}
+
+		.product-info {
+			.title {
+				a {
+					&:hover {
+						color: $theme-color4;
+					}
+				}
+			}
+		}
+	}
+
+	.product-tabs-content-wrap {
+		.product-tab-content {
+			padding: 0 65px;
+			@media #{$lg-device} {
+				padding: 0;
+			}
+		}
+	}
+
+	.footer-area  {
+		padding-right: 80px;
+		padding-left: 80px;
+		@media #{$lg-device} {
+			padding-right: 0;
+			padding-left: 0;
+		}
+	}
+
+	.scroll-to-top {
+	    background-color: $theme-color4;
+	}
+
+	.preloader-wrap {
+		.preloader {
+			.dots {
+				[class*="bounce"] {
+				    background-color: $theme-color4;
+				}
+			}
+		}
+	}
+}
+

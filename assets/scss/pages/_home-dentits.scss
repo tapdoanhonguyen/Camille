@@ -1,0 +1,353 @@
+/*
+-----------------------------------------------------------------------
+	Home Dentits CSS
+-----------------------------------------------------------------------
+*/
+
+.dentits-wrapper {
+	font-family: $font-current-theme3;
+	font-size: 18px;
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: $font-current-theme3;
+	}
+
+	p {
+		color: #5a5c64;
+	}
+
+	.btn-theme {}
+
+	.section-title {
+		margin-bottom: 70px;
+		@media #{$md-device} {
+			margin-bottom: 40px;
+		}
+
+		.title {
+			font-size: 48px;
+			text-transform: uppercase;
+			margin-bottom: -1px;
+			padding-bottom: 2px;
+			@media #{$md-device} {
+				font-size: 34px;
+				padding-bottom: 0;
+			}
+			@media #{$sm-device} {
+				font-size: 28px;
+			}
+		}
+
+		p {
+			@media #{$md-device} {
+				font-size: 15px;
+			}
+			@media #{$sm-device} {
+				font-size: 14px;
+			}
+		}
+
+		.desc {
+			p {
+				font-size: 18px;
+				line-height: 1.5;
+				@media #{$md-device} {
+					font-size: 16px;
+				}
+			}
+		}
+
+		&.section-title-light {
+			.title {
+				color: $white;
+			}
+
+			.desc {
+				p {
+					color: $white;
+				}
+			}
+		}
+	}
+
+	.header-area {
+        .main-menu {
+          & > li {
+            &.active {
+              a {
+                color: $theme-color18;
+              }
+            }
+            & > a {
+              color: #343538;
+
+              span {
+                &:before {
+                  background-color: $theme-color18;
+                }
+              }
+
+              &:hover {
+                color: $theme-color18;
+              }
+            }
+          }
+        }
+	}
+
+	.service-area {
+		padding: 76px 0 106px;
+		@media #{$lg-device} {
+			padding: 72px 0 74px;
+		}
+
+		.section-title {
+			margin-bottom: 12px;
+		}
+
+		.service10-content-wrap {
+			.icon-box-item {
+				.icon-box-icon {
+					span,
+					svg {
+						color: $theme-color18;
+					}
+				}
+
+				.icon-box-content {
+					.title {
+						a {
+							&:hover {
+								color: $theme-color18;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.team-area {
+		padding: 71px 0;
+		@media #{$sm-device} {
+			padding: 71px 0 41px;
+		}
+
+		.team5-content-wrap {
+			.team-item {
+				.thumb {
+					.social-icons {
+						a {
+							&:hover {
+								color: $theme-color18;
+							}
+						}
+					}
+				}
+				.content {
+					.title {
+						a {
+							&:hover {
+								color: $theme-color18;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.testimonial-area {
+		padding: 61px 0 84px;
+		@media #{$md-device} {
+			padding: 61px 0 74px;
+		}
+
+		.dentits-testimonial-slider {
+			padding-right: 1px;
+			margin-right: 1px;
+		}
+	}
+
+	.divider-area {
+		padding: 56px 0 102px;
+		@media #{$md-device} {
+			padding: 56px 0 68px;
+		}
+	}
+
+	.accordion-style3 {
+		.card {
+			.card-header {
+				.title {
+					&:not(.collapsed) {
+						color: $theme-color18;
+					}
+				}
+			}
+		}
+	}
+
+	.blog-area {
+		padding: 61px 0 128px;
+		
+		.post9-content-wrap {
+			.post-item {
+				.content {
+					.title {
+						a {
+							&:hover {
+								color: $theme-color18;
+							}
+						}
+						
+					}
+					.meta {
+						a {
+							&:hover {
+								color: $theme-color18;
+							}
+						}
+						.category {
+							color: $theme-color18;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.contact-area {
+		.section-title {
+			@media #{$lg-device} {
+				margin-bottom: 40px;
+			}
+
+			&.section-title-light {
+				.title {
+					@media #{$lg-device} {
+						font-size: 32px;
+					}
+				}
+			}
+		}
+
+		.map-area {
+			@media #{$xs-device} {
+				height: 500px;
+			}
+			
+			.contact-page-map {
+				.map-content {
+					width: auto;
+					height: auto;
+					position: absolute !important;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					top: 0;
+				}
+			}
+		}
+
+		.contact-form6-content {
+			background-color: $theme-color18;
+			padding: 8%;
+		}
+	}
+
+	.slick-dotted-style {
+	  .slick-dots {
+	    li {
+	      button {
+	        &:before {
+	          border: 4px solid $black-8a;
+	          opacity: .4;
+	          @include transition(all .2s ease-out);
+	        }
+	      }
+	      &.slick-active {
+	        button {
+	          &:before {
+	            border-color: $theme-color18;
+	            opacity: 1;
+	            @include transition(all .2s ease-out);
+	          }
+	        }
+	      }
+	    }
+	  }
+	}
+
+	.post-slider {
+		.slick-slide {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		&.slick-dotted-style {
+			&.slick-dotted {
+				&.slick-slider {
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.footer-area {
+		padding: 80px 0 0;
+
+		.footer-widget-area {
+			.widget-item {
+				.widget-title {
+					margin-bottom: 21px;
+				}
+
+				.about-widget {
+					p {
+						margin-bottom: 11px;
+					}
+
+					.social-icons {
+						a {
+							font-size: 14px;
+						}
+					}
+				}
+
+				.widget-list {
+					margin-bottom: 46px;
+
+					li {
+						margin-bottom: 12px;
+					}
+				}
+
+				.widget-post {
+					li {
+						margin-bottom: 17px;
+						line-height: 22.4px;
+
+						a {
+							line-height: 22.4px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.scroll-to-top {
+	    background-color: $theme-color18;
+	}
+
+	.preloader-wrap {
+		.preloader {
+			.dots {
+				[class*="bounce"] {
+				    background-color: $theme-color18;
+				}
+			}
+		}
+	}
+}

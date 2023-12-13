@@ -1,0 +1,119 @@
+/*
+-----------------------------------------------------------------------
+	Home Minimal Agency Sidebar CSS
+-----------------------------------------------------------------------
+*/
+
+.minimal-agency-sidebar-wrapper {
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+	  font-family: $font-current-theme1;
+	}
+
+	.section-title {
+		.title {
+			font-weight: $font-weight-normal;
+			font-family: $font-current-theme2;
+			font-size: 48px;
+			line-height: 60px;
+			@media #{$lg-device} {
+				font-size: 36px;
+				line-height: 1.2;
+			}
+			@media #{$md-device} {
+				font-size: 30px;
+			}
+			@media #{$sm-device} {
+				font-size: 24px;
+			}
+		}
+	}
+
+	.header-area {
+		&.fixed-left {
+			@media #{$lg-device} {
+				max-width: 290px;
+			}
+		}
+	}
+
+	.portfolio-item {
+		margin-bottom: 10px;
+	}
+
+	.video-divider-area {
+		.video-divider-wrap {
+			padding: 105px 150px 88px 212px;
+			@media #{$xsl-device} {
+				padding: 105px 0 88px 0;
+			}
+
+			.content {
+				margin-bottom: 50px;
+				padding-right: 20px;
+
+				p {
+					font-size: 50px;
+				}
+			}
+			.play-video-btn {}
+		}
+	}
+
+	.footer-area {
+		.footer-widget-area {
+			.widget-item {
+				.widget-title {
+					font-size: 12px;
+				}
+
+				p {
+					font-size: 12px;
+				}
+			}
+
+			.widget-list {
+				li {
+					margin-bottom: 14px;
+
+					a {
+						font-size: 12px;
+					}
+				}
+			}
+
+			.widget-post {
+				li {
+					margin-bottom: 12px;
+					line-height: 1.6;
+
+					a {
+						font-size: 12px;
+						line-height: 1.6;
+					}
+				}
+			}
+
+			.about-widget {
+				p {
+					font-size: 12px;
+				}
+			}
+		}
+
+		.footer-bottom {
+			.widget-text {
+				p {
+					font-size: 10px;
+				}
+			}
+		}
+	}
+}
+
+.fancybox-popup {
+	.fancybox-container {
+		width: calc(100% - 370px);
+		left: 370px;
+	}
+}
